@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Start with the visual dashboard
+    url: https://carpe-diem-innovations-inc.github.io/election-records-forensics-2026/dashboard.html
+    about: The findings, summarized visually — check whether your point is already covered before filing.
+  - name: Reproduce it first
+    url: https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/blob/main/METHODOLOGY.md
+    about: One command re-derives every published result. Findings and refutations should anchor to it.

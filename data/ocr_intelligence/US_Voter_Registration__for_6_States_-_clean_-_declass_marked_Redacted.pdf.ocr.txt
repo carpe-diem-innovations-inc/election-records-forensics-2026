@@ -1,0 +1,67 @@
+--- page 1 ---
+DECLASSIFIED BY COUNSEL TO THE PRESIDENT WARRINGTON ON 1O JULY 2O26
+GOVERNMENT
+SENSITIVE
+AGENCY
+SUBSTANTIVEREVISION:Network
+DefenseNotice:PubliclyAvailableU.S.VoterRegistrationInformation
+forSixU.S.StatesDownloadedfromCommercialWebsitesbyPRC
+CNEActorinJanuary2o22;SameActorAttemptstoDownloadOhio
+VoterRegistrationApplication;
+This is a revised copy.The State of Oklahoma has been added. In addition, the websites hosting
+the voterregistration records are commercial websites,and thatfact has been clarified inthe report.Please
+removethe original reportfrom allmanualand computerfiles.
+Publicly availableU.S.voterregistration informationforsix states was
+downloadedbyaPRC
+CNEactoron14January2022.TheCNEactor
+Colorado,Connecticut, Florida, Michigan,Oklahoma, and RhodeIsland voter registration
+information from U.S.commercial websites anda U.S.IP address.In addition, an Ohiovoter registration
+application was also of interest to the CNE actor, but failed to download.
+Page1
+DECLASSIFIED BY COUNSEL TO
+THE PRESIDENT WARRINGTON ON 1O JULY 2O26
+--- page 2 ---
+DECLASSIFIED BY COUNSEL TO THE PRESIDENT WARRINGTON ON 1O JULY 2O26
+) Voter registration information from at least 2013 through 2021 is publicly available for download
+from the commercial websites and it appears the PRC CNE actor downloaded the full repositories. This activity
+represents newly-identified interest by this PRC CNE actor in U.S. elections, and the Pll information obtained
+- to include names, party affiliations, email addresses, physical addresses, and phone numbers - could,
+in theory, be leveraged to carry out anything from future CNE operations to election influence operations,
+although the actual motivations for collecting this information is unknown.
+The victim information was passed to the appropriate agencies for CND response actions
+Colorado, Connecticut, Florida, Michigan, Oklahoma, and Rhode Island States' historical U.S. voter
+registration information from 2013 to 2021 was downloaded by a PRC CNE actor on 14 January 2022 from
+U.S. commercial websites, and a U.S. IP address hosting, among other things, U.S. state voter registration
+information. (T1594)
+CNE actor, but failed to download from the U.S. State Government's website.
+While the PRC government has historically demonstrated interest in U.S. elections, this is a
+newly-identified interest for this individual actor. The U.S. voter registration information is available for public
+download, with 2021 voter registration information available for some states. The PRC actors could, in
+theory, leverage the Pll information obtained - to include names, party affiliations, email addresses, physical
+CISA and the NCIJTF CYWATCH have established a Victim Notification process that provides a systematic way
+Victim, the notification should be deconflicted through CISA and NClJTF CYWATCH, using the contact information below:
+2.
+According to the MITRE ATT&CK framework, T1594 describes how adversaries may search websites owned by potential
+victims for information that can be used during targeting. Victim-owned websites may contain a variety of details, including names
+of departments/divisions, physical locations, and data about key employees such as names, roles, and contact into. These sites
+may also have details highlighting business operations and relationships.
+Page 2
+DECLASSIEIED BY COUNSEL TO THE
+PRESIDENT WARRINGTON ON 10 JULY 2O26
+--- page 3 ---
+DECLASSIFIED BY COUNSEL TO THE PRESIDENT WARRINGTON ON 1OJULY 2O26
+addresses, and phone numbers -for anything from future CNE operations to election influence operations,
+although the actual motivations for collecting this information is unknown.
+Election security organizations should be aware that U.S. State voter registration information may
+be hosted on websites outside the control of government agencies, and that APT actors may harvest voter
+registrationinformationoutsidethemonitoringofelectionsecurityorganizations.
+Page3
+DECLASSIFIED BYCOUNSEL TO THE PRESIDENT WARRINGTON ON 1O JULY2O26
+--- page 4 ---
+DECLASSIFIED BYCOUNSEL TOTHE PRESIDENT WARRINGTON ON1O JULY 2O26
+Page4
+--- page 5 ---
+DECLASSIFIED BY COUNSEL TO THE PRESIDENT WARRINGTON ON 1O JULY 2O26
+Page5
+DECLASSIFIED BY COUNSEL TO THE PRESIDENT WARRINGTON ON1OJULY2O26
+--- page 6 ---

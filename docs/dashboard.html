@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Election-Integrity Release — Reproducible Forensics &amp; Fact-Check</title>
+<meta name="description" content="Visual summary of a reproducible forensic and fact-check analysis of the whitehouse.gov/election-integrity document archives. Tiered findings: reproducible fact, sourced fact-check, fenced interpretation.">
+<link rel="canonical" href="https://carpe-diem-innovations-inc.github.io/election-records-forensics-2026/dashboard.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍁</text></svg>">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Election Records Forensics 2026">
+<meta property="og:title" content="The Election-Integrity Release, Read From the File Metadata Up">
+<meta property="og:description" content="Visual summary: how the package was built, what held, what the memos actually say — tiered by evidence.">
+<meta property="og:url" content="https://carpe-diem-innovations-inc.github.io/election-records-forensics-2026/dashboard.html">
+<meta property="og:image" content="https://carpe-diem-innovations-inc.github.io/election-records-forensics-2026/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://carpe-diem-innovations-inc.github.io/election-records-forensics-2026/og.png">
+<style>
+  :root{
+    --ground:#eef1f4; --surface:#ffffff; --surface-2:#f6f8fa;
+    --ink:#15181e; --muted:#5b626f; --faint:#8a909c;
+    --hair:#d7dce2; --hair-strong:#c2c9d2;
+    --accent:#9a6b1e; --accent-soft:#f0e5d2;
+    --ok:#2f7d4f; --ok-bg:#e4f1e8;
+    --warn:#9a7511; --warn-bg:#f6ecd2;
+    --bad:#a83232; --bad-bg:#f6dede;
+    --neut:#5b6472; --neut-bg:#e6e9ee;
+    --mono:ui-monospace,"SF Mono","Cascadia Mono",Consolas,monospace;
+    --serif:"Iowan Old Style",Georgia,"Times New Roman",ui-serif,serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --maxw:1080px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --ground:#111318; --surface:#181b22; --surface-2:#1e222b;
+      --ink:#e9ecf1; --muted:#a2a9b6; --faint:#727a88;
+      --hair:#2a2f3a; --hair-strong:#39404d;
+      --accent:#d3a058; --accent-soft:#33291a;
+      --ok:#6fce97; --ok-bg:#16281e;
+      --warn:#e0bd6a; --warn-bg:#2b2312;
+      --bad:#eb8686; --bad-bg:#301818;
+      --neut:#a2a9b6; --neut-bg:#232833;
+    }
+  }
+  :root[data-theme="light"]{
+    --ground:#eef1f4; --surface:#ffffff; --surface-2:#f6f8fa; --ink:#15181e; --muted:#5b626f; --faint:#8a909c;
+    --hair:#d7dce2; --hair-strong:#c2c9d2; --accent:#9a6b1e; --accent-soft:#f0e5d2;
+    --ok:#2f7d4f; --ok-bg:#e4f1e8; --warn:#9a7511; --warn-bg:#f6ecd2; --bad:#a83232; --bad-bg:#f6dede; --neut:#5b6472; --neut-bg:#e6e9ee;
+  }
+  :root[data-theme="dark"]{
+    --ground:#111318; --surface:#181b22; --surface-2:#1e222b; --ink:#e9ecf1; --muted:#a2a9b6; --faint:#727a88;
+    --hair:#2a2f3a; --hair-strong:#39404d; --accent:#d3a058; --accent-soft:#33291a;
+    --ok:#6fce97; --ok-bg:#16281e; --warn:#e0bd6a; --warn-bg:#2b2312; --bad:#eb8686; --bad-bg:#301818; --neut:#a2a9b6; --neut-bg:#232833;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+    line-height:1.55;-webkit-font-smoothing:antialiased;font-size:16px}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:clamp(20px,4vw,56px) clamp(16px,4vw,32px)}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent);font-weight:600}
+  h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5.2vw,52px);line-height:1.05;
+    margin:.35em 0 .25em;text-wrap:balance;letter-spacing:-.01em}
+  h2{font-family:var(--serif);font-weight:600;font-size:clamp(22px,3.2vw,30px);margin:0 0 .1em;letter-spacing:-.01em}
+  h3{font-size:15px;margin:0 0 6px;letter-spacing:.01em}
+  .lede{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:66ch;margin:.4em 0 0}
+  .sub{color:var(--faint);font-family:var(--mono);font-size:12.5px;margin-top:14px;line-height:1.7}
+  section{margin-top:clamp(38px,6vw,68px)}
+  .sec-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;border-bottom:1px solid var(--hair-strong);
+    padding-bottom:12px;margin-bottom:24px}
+  .sec-head .n{font-family:var(--mono);font-size:13px;color:var(--accent);font-weight:600}
+  .sec-head p{margin:0;color:var(--muted);font-size:14px;flex:1;min-width:180px}
+  /* stat tiles */
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+  .tile{background:var(--surface);border:1px solid var(--hair);border-radius:10px;padding:16px 16px 14px}
+  .tile .v{font-family:var(--serif);font-size:clamp(26px,4vw,34px);line-height:1;font-variant-numeric:tabular-nums}
+  .tile .k{color:var(--muted);font-size:12.5px;margin-top:8px}
+  .tile .k b{color:var(--ink);font-weight:600}
+  /* cards */
+  .card{background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:22px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:720px){.grid2{grid-template-columns:1fr}}
+  /* timeline */
+  .tl{background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:8px 4px}
+  .tl-row{display:grid;grid-template-columns:120px 1fr;gap:14px;align-items:center;padding:12px 18px;
+    border-bottom:1px solid var(--hair)}
+  .tl-row:last-child{border-bottom:0}
+  .tl-time{font-family:var(--mono);font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+  .tl-bar{display:flex;align-items:center;gap:12px}
+  .tl-track{flex:1;height:26px;background:var(--surface-2);border-radius:6px;position:relative;overflow:hidden;
+    border:1px solid var(--hair)}
+  .tl-fill{position:absolute;top:0;bottom:0;left:0;background:linear-gradient(90deg,var(--accent),color-mix(in srgb,var(--accent) 55%,transparent));
+    border-radius:6px;display:flex;align-items:center;padding-left:10px;color:#fff;font-size:12px;font-weight:600;
+    font-family:var(--mono);min-width:fit-content;white-space:nowrap}
+  :root[data-theme="dark"] .tl-fill{color:#181b22}
+  @media (prefers-color-scheme:dark){.tl-fill{color:#181b22}}
+  .tl-label{font-size:13.5px;min-width:150px}
+  .tl-label b{font-weight:600}
+  .tl-label .agent{font-family:var(--mono);font-size:11.5px;color:var(--faint)}
+  .pill{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:600;padding:3px 8px;border-radius:20px;
+    letter-spacing:.03em;white-space:nowrap}
+  .pill.alt{background:var(--accent-soft);color:var(--accent)}
+  /* tables */
+  .tbl-scroll{overflow-x:auto;border:1px solid var(--hair);border-radius:12px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px}
+  th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--hair);vertical-align:top}
+  th{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;
+    background:var(--surface-2);position:sticky;top:0}
+  tr:last-child td{border-bottom:0}
+  td.mono,.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+  .verdict{font-family:var(--mono);font-size:11px;font-weight:700;padding:3px 9px;border-radius:5px;
+    letter-spacing:.03em;white-space:nowrap;display:inline-block}
+  .v-ok{background:var(--ok-bg);color:var(--ok)} .v-warn{background:var(--warn-bg);color:var(--warn)}
+  .v-bad{background:var(--bad-bg);color:var(--bad)} .v-neut{background:var(--neut-bg);color:var(--neut)}
+  .claim-t{font-weight:600;margin-bottom:3px}
+  .claim-d{color:var(--muted);font-size:13px}
+  .claim-d a{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 40%,transparent)}
+  .claim-d a:hover{border-bottom-color:var(--accent)}
+  /* two-col support */
+  ul.clean{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+  ul.clean li{padding-left:22px;position:relative;font-size:14px;color:var(--ink)}
+  ul.clean li::before{position:absolute;left:0;top:1px;font-family:var(--mono);font-weight:700}
+  .yes li::before{content:"✓";color:var(--ok)} .no li::before{content:"✕";color:var(--bad)}
+  .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
+  .callout{border-left:3px solid var(--accent);background:var(--surface-2);padding:14px 18px;border-radius:0 8px 8px 0;
+    font-size:14.5px;color:var(--ink)}
+  .fact{display:flex;gap:10px;align-items:flex-start;font-size:14px;padding:9px 0;border-bottom:1px dashed var(--hair)}
+  .fact:last-child{border-bottom:0}
+  .fact .dot{font-family:var(--mono);color:var(--accent);font-weight:700;flex-shrink:0}
+  footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--hair-strong);color:var(--faint);font-size:12.5px;
+    font-family:var(--mono);line-height:1.8}
+  .disclaim{margin-top:10px;font-family:var(--sans);font-size:12.5px;color:var(--faint);max-width:70ch}
+  .toggle{position:fixed;top:14px;right:14px;background:var(--surface);border:1px solid var(--hair-strong);
+    color:var(--muted);font-family:var(--mono);font-size:11px;padding:6px 11px;border-radius:20px;cursor:pointer;z-index:9}
+  .toggle:hover{color:var(--ink);border-color:var(--accent)}
+  .tier{display:inline-block;font-family:var(--mono);font-size:10.5px;font-weight:700;padding:2px 8px;
+    border-radius:4px;letter-spacing:.06em;white-space:nowrap;vertical-align:middle;
+    border:1px solid var(--hair-strong);color:var(--muted);background:var(--surface-2)}
+  .tier.t1{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 45%,transparent)}
+  .tier.t2{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 45%,transparent)}
+  .tier.t3{color:var(--neut);border-color:var(--hair-strong)}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<button class="toggle" id="tgl" aria-label="Toggle theme">◐ theme</button>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Metadata Forensics · Fact-Check · Open to Scrutiny</div>
+    <h1>The Election-Integrity Release, Read From the File Metadata Up</h1>
+    <p class="lede">A forensic and fact-check analysis of the four document archives published at
+      <span class="mono">whitehouse.gov/election-integrity</span>, released alongside the presidential
+      address of 16 July 2026. The files were examined before the claims — because how a package is built
+      is itself evidence.</p>
+    <div class="sub">58 PDFs · 55 unique · 269 pages · 64 macOS sidecar files · every finding reproducible from the raw artifacts</div>
+  </header>
+
+  <section id="glance">
+    <div class="tiles">
+      <div class="tile"><div class="v">4</div><div class="k">ZIP <b>archives</b> (one per section)</div></div>
+      <div class="tile"><div class="v">58</div><div class="k">PDF documents · <b>55 unique</b> by SHA-256</div></div>
+      <div class="tile"><div class="v">38<span style="font-size:.5em"> sec</span></div><div class="k">to download the <b>four evidence bundles</b> (the two framing docs came +11/+23 min later)</div></div>
+      <div class="tile"><div class="v">55<span style="font-size:.5em">/58</span></div><div class="k">docs with <b>metadata stripped</b></div></div>
+      <div class="tile"><div class="v">18</div><div class="k"><b>characters</b> recoverable under redactions</div></div>
+      <div class="tile"><div class="v">3</div><div class="k">byte-identical <b>duplicate</b> re-files</div></div>
+      <div class="tile" style="border-color:var(--accent)"><div class="v">0</div><div class="k">of 16 intel memos claim a <b>vote was changed</b></div></div>
+    </div>
+  </section>
+
+  <section id="curation">
+    <div class="sec-head"><span class="n">01</span><h2>The package was hand-built on one Mac</h2>
+      <p>macOS quarantine attributes survived in the archive and timestamp the assembly to the minute.</p>
+      <span class="tier t1">TIER 1 · REPRODUCIBLE</span></div>
+
+    <p style="margin:0 0 18px;color:var(--muted);max-width:68ch">Every file macOS downloads gets a
+      <span class="mono">com.apple.quarantine</span> tag recording the <b>application, a per-download UUID, and a UTC time</b>.
+      62 of 64 sidecars kept theirs. Decoded, they show the evidentiary corpus arriving in four bundle
+      downloads — one per section, in order — inside a single 38-second window.</p>
+
+    <div class="tl">
+      <div class="tl-row">
+        <div class="tl-time">16:02:35Z</div>
+        <div class="tl-bar"><div class="tl-track"><div class="tl-fill" style="width:22%">8 files</div></div>
+          <div class="tl-label"><b>§1 Vulnerabilities</b><br><span class="agent">Chrome · 1 bundle</span></div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-time">16:02:57Z</div>
+        <div class="tl-bar"><div class="tl-track"><div class="tl-fill" style="width:62%">23 files</div></div>
+          <div class="tl-label"><b>§2 China</b><br><span class="agent">Chrome · 1 bundle</span></div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-time">16:03:05Z</div>
+        <div class="tl-bar"><div class="tl-track"><div class="tl-fill" style="width:70%">26 files</div></div>
+          <div class="tl-label"><b>§3 Michigan</b><br><span class="agent">Chrome · 1 bundle</span></div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-time">16:03:13Z</div>
+        <div class="tl-bar"><div class="tl-track"><div class="tl-fill" style="width:12%">3 files</div></div>
+          <div class="tl-label"><b>§4 Noncitizens</b><br><span class="agent">Chrome · 1 bundle</span></div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-time">16:14:24Z</div>
+        <div class="tl-bar"><div class="tl-track"><div class="tl-fill" style="width:8%;background:var(--neut)">1</div></div>
+          <div class="tl-label"><b>CISA Election Report</b><br><span class="agent">via Adobe Acrobat · +11 min</span></div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-time">16:25:47Z</div>
+        <div class="tl-bar"><div class="tl-track"><div class="tl-fill" style="width:8%;background:var(--neut)">1</div></div>
+          <div class="tl-label"><b>WHTF States Statement</b> <span class="pill alt">opened on Mac</span><br><span class="agent">via Mattermost · +23 min</span></div></div>
+      </div>
+    </div>
+
+    <div class="grid2" style="margin-top:16px">
+      <div class="card">
+        <div class="kicker">Separate arrivals</div>
+        <p style="margin:0;font-size:14.5px">The raw intelligence and investigative PDFs came as four
+          pre-built section bundles. Two of the three "FINAL" framing documents arrived <b>separately,
+          minutes later</b> — one saved through Adobe Acrobat, one received over <b>Mattermost, a team-chat
+          platform</b>; the third (the Word-authored Database-Threats wrapper) shipped inside the §4 bundle.
+          Exactly two files carry an opened-on-the-Mac residue (<span class="mono">lastuseddate</span>):
+          the Mattermost-received statement and one Chrome-bundled <i>evidence</i> PDF (the NICM
+          Vulnerabilities memo).</p>
+      </div>
+      <div class="card">
+        <div class="kicker">Corroborating residue</div>
+        <p style="margin:0 0 10px;font-size:14.5px">The Michigan folder's <span class="mono">.DS_Store</span>
+          preserves a working-folder name that isn't in the shipped package:</p>
+        <div class="callout mono" style="font-size:13px">📁 NEW ADDED FOR UPLOAD 7.15.26</div>
+        <p style="margin:10px 0 0;font-size:13px;color:var(--muted)">A staging step, and a 15 July upload
+          cycle — one day before release.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="metadata">
+    <div class="sec-head"><span class="n">02</span><h2>Metadata absent from 55 of 58 — present on three</h2>
+      <p>Authoring metadata was removed from 55 of 58 files. The three exceptions each carry dates and toolchains.</p>
+      <span class="tier t1">TIER 1 · REPRODUCIBLE</span></div>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Document</th><th>Producer / Creator</th><th>Internal dates</th><th>Reading</th></tr></thead>
+        <tbody>
+          <tr><td><b>CISA Election Report — FINAL</b></td><td class="mono">Acrobat PDFMaker for Word</td>
+            <td class="mono">cre 2026-07-13<br>mod 2026-07-16</td><td>Narrative report, authored in Word</td></tr>
+          <tr><td><b>Voter Registration Database Threats — FINAL</b></td><td class="mono">MS Word for M365</td>
+            <td class="mono">cre <b>2026-06-24</b><br>mod 2026-07-13</td><td>Word document, created ~3 wks before release</td></tr>
+          <tr><td><b>FBI_ALBANY_IIR … CHAIRMAN GRASSLEY</b></td><td class="mono">iText 2.1.7</td>
+            <td class="mono">mod <b>2025-07-01</b></td><td>Lone 2025 artifact — earlier Grassley track</td></tr>
+          <tr><td><b>“Summary” PARTs 1–3 + PRC Reporting Note</b></td><td class="mono">xmp: Hewlett-Packard MFP</td>
+            <td class="mono">scanned 2026-07-11 &amp;<br>07-14 15:27:30→:28:04</td><td>Paper memos scanned on one scanner model;
+            the three Summary parts consecutively, <b>22 and 12 seconds apart</b></td></tr>
+          <tr><td colspan="4" style="color:var(--muted)">The other <b>55 documents</b>: no author, no creator, no producer —
+            consistent with a redaction / flatten / re-image pipeline. Only 6 files (5 unique documents — the
+            duplicated CIA Wire Memo counts twice) retain <span class="mono">/Info</span> dates
+            (plus the four XMP scan timestamps above); the surviving processing dates cluster
+            <span class="mono">2026-07-11 → 07-16</span>. The “Venezuela Machines” memo is named
+            <span class="mono">29JUNE2026</span> but the PDF was generated <span class="mono">2026-07-14</span>.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="redaction">
+    <div class="sec-head"><span class="n">03</span><h2>Redaction integrity: held under the vectors tested</h2>
+      <p>A deliberate negative result — this release is not one of the botched-redaction scandals.</p>
+      <span class="tier t1">TIER 1 · REPRODUCIBLE</span></div>
+    <div class="grid2">
+      <div class="card" style="display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="v-ok verdict" style="font-size:13px">PASS</span>
+          <span style="color:var(--muted);font-size:14px">58 documents tested</span>
+        </div>
+        <p style="margin:0;font-size:14.5px">Born-digital text was genuinely <b>removed</b>, not merely
+          covered. Scanned pages are single <b>flattened images</b> — redactions burned into pixels.
+          The only text recoverable beneath any black box, across the whole corpus, is the boilerplate
+          form label <span class="mono">"Dated:"</span>.</p>
+        <div class="tiles" style="grid-template-columns:1fr 1fr">
+          <div class="tile" style="background:var(--surface-2)"><div class="v" style="font-size:26px">2</div><div class="k">docs with any leak</div></div>
+          <div class="tile" style="background:var(--surface-2)"><div class="v" style="font-size:26px">18</div><div class="k">chars — three occurrences of the form label <span class="mono">"Dated:"</span></div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="kicker">Also ruled out</div>
+        <div class="fact"><span class="dot">→</span><div>The dual <span class="mono">%%EOF</span> markers in ~50 files are
+          <b>linearization</b> (“Fast Web View”), <b>not</b> a redaction revision — no prior version recoverable.</div></div>
+        <div class="fact"><span class="dot">→</span><div>Multi-image pages are logos and seals, not overlay redaction boxes hiding a base image.</div></div>
+        <div class="fact"><span class="dot">→</span><div><b>Inference:</b> the sanitization was done by someone technically competent — consistent with a real declassification process.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="factcheck">
+    <div class="sec-head"><span class="n">04</span><h2>Claims vs. the public record</h2>
+      <p>The metadata shows how the package was built. This tests what it asserts. <i>"Extraordinary
+      claims require extraordinary evidence."</i> — Carl Sagan</p>
+      <span class="tier t2">TIER 2 · SOURCED</span></div>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th style="min-width:230px">Claim in the release</th><th>Verdict</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><div class="claim-t">China “compromised” 200–220M voter records</div></td>
+            <td><span class="verdict v-warn">MISLEADING</span></td>
+            <td class="claim-d">Commercial voter files (full files <b>≈200M records</b>, marketed as covering nearly
+              every U.S. adult) are compiled from largely <b>public records</b> and <b>sold openly</b> in 32 states + DC.
+              Acquiring such data ≠ hacking vote counts.
+              <a href="https://www.pewresearch.org/methods/2018/02/15/commercial-voter-files-and-the-study-of-u-s-politics/">Pew</a>,
+              <a href="https://ballotpedia.org/Availability_of_state_voter_files">Ballotpedia</a>.</td>
+          </tr>
+          <tr>
+            <td><div class="claim-t">Voter rolls in ≥18 states compromised by the PRC</div></td>
+            <td><span class="verdict v-warn">DISPUTED</span></td>
+            <td class="claim-d">Foreign probing is real, but best-attributed 2016 activity was <b>Russian</b>;
+              “compromised” conflates acquisition, probing and breach. The corpus itself contains the internal dissent.
+              <a href="https://www.nextgov.com/cybersecurity/2026/07/trump-stretches-declassified-china-intelligence-broader-2020-election-claims/414837/">Nextgov</a>.</td>
+          </tr>
+          <tr>
+            <td><div class="claim-t">Implication China changed the 2020 outcome</div></td>
+            <td><span class="verdict v-warn">DISPUTED</span></td>
+            <td class="claim-d">The <b>2021 declassified ICA</b> found China "considered but did not deploy"
+              outcome-changing influence efforts; a minority view + DNI Ratcliffe dissented on whether influence was
+              <i>attempted</i> — no IC view asserted the outcome changed. Material was <b>already known</b> to the IC.
+              <a href="https://www.washingtonexaminer.com/news/minority-view-intelligence-assessment-argues-china-2020-hurt-trump">Wash. Examiner</a>.</td>
+          </tr>
+          <tr>
+            <td><div class="claim-t">Michigan “fake voter” scheme (GBI Strategies)</div></td>
+            <td><span class="verdict v-neut">REAL CASE ·<br>FRAMING UNSUPPORTED</span></td>
+            <td class="claim-d">Forged registration <b>applications</b> were submitted in 2020 — and <b>caught before
+              Election Day</b>. No fraudulent registrations entered the roll, <b>no fraudulent ballots cast</b>, no charges.
+              <a href="https://bridgemi.com/michigan-government/muskegon-fake-voter-applications-probed-2020-referred-fbi-nessel-says/">Bridge MI</a>,
+              <a href="https://www.newsweek.com/fact-check-did-michigan-police-uncover-2020-democratic-election-plot-1820154">Newsweek</a>.</td>
+          </tr>
+          <tr>
+            <td><div class="claim-t">250,000+ noncitizens registered in 4 states</div></td>
+            <td><span class="verdict v-neut">UNVERIFIED</span></td>
+            <td class="claim-d">Raw “matches” collapse on audit: MI found <b>16</b> noncitizen 2024 ballots (~0.0003%);
+              national SAVE returns ~<b>0.04%</b>; the tool has documented false positives and was court-blocked.
+              <a href="https://www.factcheck.org/2026/03/flaws-in-government-tool-to-id-noncitizen-voters/">FactCheck.org</a>,
+              <a href="https://www.brennancenter.org/our-work/research-reports/watch-out-false-voter-fraud-claims-fueled-save-program">Brennan</a>.</td>
+          </tr>
+          <tr>
+            <td><div class="claim-t">CIA note reviving “Venezuela machines”</div></td>
+            <td><span class="verdict v-bad">DEBUNKED</span></td>
+            <td class="claim-d">Dominion was founded in <b>Toronto (2002)</b>; Smartmatic wasn’t used in 2020 swing states;
+              Fox paid <b>$787.5M</b> to settle with Dominion.
+              <a href="https://www.cato.org/blog/voting-machine-conspiracy-theories-harm-us-cybersecurity">Cato</a>,
+              <a href="https://www.lawfaremedia.org/article/five-foreign-election-conspiracy-theories-making-the-rounds-again">Lawfare</a>.</td>
+          </tr>
+          <tr>
+            <td><div class="claim-t">CISA: election software has vulnerabilities (2019–24)</div></td>
+            <td><span class="verdict v-ok">ESTABLISHED</span></td>
+            <td class="claim-d">CISA’s cooperative testing with Idaho National Laboratory is real and the report is
+              measured — it documents vulnerabilities needing remediation, explicitly <b>not</b> exploited attacks.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="intel">
+    <div class="sec-head"><span class="n">05</span><h2>What the intelligence actually says</h2>
+      <p>The 16 scanned memos were OCR'd. Their own words settle the central question.</p>
+      <span class="tier t1">TIER 1 · REPRODUCIBLE</span></div>
+
+    <p style="margin:0 0 18px;color:var(--muted);max-width:70ch">Reading the memos directly converts inference
+      into a primary-source finding: every substantive document describes <b>data collection</b> and
+      <b>social-media influence operations</b>. <b>None asserts that a voter roll was altered, a ballot changed,
+      or a tabulation compromised.</b> An altered-election claim appears nowhere in the memo text.</p>
+
+    <div class="grid2">
+      <div class="card"><h3 style="color:var(--accent)">“Summary” framing memos</h3>
+        <p style="margin:0;font-size:14px">China's plans were “to <b>sway public opinion</b> against the Trump
+          Administration,” “exploit U.S. societal fissures,” projected “into social media (TikTok, Facebook,
+          Twitter, YouTube)… overt and hidden influencers.” <span style="color:var(--faint)">→ influence ops</span></p></div>
+      <div class="card"><h3 style="color:var(--accent)">“18 States” &amp; “200M Records”</h3>
+        <p style="margin:0;font-size:14px">China <b>obtained</b> voter data for “person matching and public
+          opinion analysis.” The “200M” is a single <b>2016 leaked dataset</b> (204,822,241 records) on a PRC
+          list on which “most of the entries were targets in other countries.” <span style="color:var(--faint)">→ data theft, not a breach of vote systems</span></p></div>
+      <div class="card"><h3 style="color:var(--accent)">The hawkish China memo</h3>
+        <p style="margin:0;font-size:14px">Stamped <b>“ALTERNATIVE ANALYSIS.”</b> Carries the IC mainline:
+          “Beijing has <b>not</b> deployed influence efforts intended to change the outcome.” Dissent = “low-level,
+          exploratory steps,” <b>low-to-medium confidence.</b></p></div>
+      <div class="card"><h3 style="color:var(--accent)">FBI's own 2020 objection</h3>
+        <p style="margin:0;font-size:14px">FBI Counterintelligence called specific assertions in the elevated
+          minority view <b>“extremely misleading”</b> and “highly misleading and a misrepresentation of the
+          underlying reports,” and wrote that citing “the absence of evidence” is “an absolute
+          red line” for the FBI. Director Wray had signed the mainline ICA.</p></div>
+    </div>
+
+    <div class="grid2" style="margin-top:16px">
+      <div class="card">
+        <div class="kicker">Who released it</div>
+        <p style="margin:0;font-size:14.5px">Across dozens of pages the release stamp is
+          <span class="mono" style="font-size:12px">COUNSEL TO THE PRESIDENT WARRINGTON · 10 JUL 2026</span>
+          (variously “declassified by” / “approved for public release by”) — a single <b>White House
+          Counsel's office</b> release pass. Some documents also carry agency stamps (the Venezuela note:
+          “Declassified by D/CIA Ratcliffe on 1 July 2026”; the NICM memo: a Presidential declassification
+          stamp of 3 July 2026). <span style="color:var(--faint)">(Names in these stamps are OCR-read;
+          the authority-and-date pattern is what is consistent.)</span></p>
+      </div>
+      <div class="card">
+        <div class="kicker">The named states are intelligence-derived — not a target list
+          <span class="tier t3" style="margin-left:8px">TIER 3 · SECONDARY-SOURCED</span></div>
+        <div class="tbl-scroll" style="border:0">
+        <table style="min-width:0">
+          <tbody>
+            <tr><td>Sued / resisted DOJ data demand <span style="color:var(--faint)">(mostly D-leaning)</span></td><td class="mono"><b>8</b> · CO CT DC MD MI NY OK* RI</td></tr>
+            <tr><td>Complied / gave data <span style="color:var(--faint)">(R-leaning)</span></td><td class="mono"><b>6</b> · AK AR FL IA OH OK*</td></tr>
+            <tr><td>2026 marquee battleground</td><td class="mono"><b>5</b> · GA IA MI NC OH</td></tr>
+          </tbody>
+        </table></div>
+        <p style="margin:10px 0 0;font-size:13px;color:var(--muted)">A partisan mirror, not a hit list — and the
+          names track the PRC memos' own text (spot-verify against the source images; the committed OCR does not
+          capture every state list). <b>Tempers</b> the “targeting” theory; Michigan remains an outlier.
+          <br>*Oklahoma appears in <b>both</b> lists in the secondary reporting used for this column — a real data
+          conflict. The DOJ-posture column is per news summaries, not primary court dockets (see LIMITATIONS).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="michigan">
+    <div class="sec-head"><span class="n">06</span><h2>The Michigan case, in its own documents</h2>
+      <p>All 25 Michigan PDFs OCR'd (re-derive locally; not republished). A real paid-canvasser fraud — caught, then declined on the merits.</p>
+      <span class="tier t1">TIER 1 · REPRODUCIBLE</span></div>
+
+    <div class="tl" style="padding:14px 20px">
+      <div class="fact"><span class="dot">Oct 2020</span><div><b>Muskegon City Clerk catches it</b> — flags "non-existent addresses, invalid telephone numbers, and the same hand writing," refers to police.</div></div>
+      <div class="fact"><span class="dot">Mar 2021</span><div>DOJ Public Integrity authorizes only a <b>financial probe</b> of prepaid cards — "Investigation into voter fraud <b>not</b> authorized."</div></div>
+      <div class="fact"><span class="dot">Nov 2021</span><div>A newer FBI agent objects to closing; AUSAs doubt they can prove <b>willfulness</b> or election impact.</div></div>
+      <div class="fact"><span class="dot">Feb 2023</span><div>Full field investigation authorized (2/2/2023).</div></div>
+      <div class="fact"><span class="dot">May 2023</span><div>Database checks on the <b>107</b> flagged applications: <b>91</b> list individuals with <b>no database trace</b>; of the 16 real people, only 4 signatures matched.</div></div>
+      <div class="fact"><span class="dot">Declined</span><div>DOJ/PIN &amp; U.S. Attorneys: "not seeking further investigative or prosecutive action… <b>PIN agrees</b>." No charges.</div></div>
+    </div>
+
+    <div class="grid2" style="margin-top:16px">
+      <div class="card">
+        <div class="kicker">The real pattern</div>
+        <p style="margin:0;font-size:14.5px">Canvassers were <b>paid per registration</b> (loaded on prepaid cards) with quotas "to get paid" — the textbook incentive to <b>pad</b>. That is <b>application</b> fraud for pay, caught before processing — <b>not fraudulent ballots or altered votes.</b></p>
+      </div>
+      <div class="card">
+        <div class="kicker">The framing gap</div>
+        <p style="margin:0;font-size:14.5px">The filename <span class="mono" style="font-size:12px">"Gift Cards Suppress Trump"</span> is curator-supplied: the underlying witness interview contains no admission supporting it (re-derive it from the source archive; witness-interview text is deliberately not republished here). <b>Several curator-supplied filenames assert an intent the interview texts do not contain.</b></p>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:16px">
+      <b>The "4-country graphic" email (Sept 2020)</b> shows <b>CIA, FBI, and INR</b> urging caution against
+      elevating a "preference line," because consensus was that China judged election interference
+      <b>"not worth the risk."</b> It records a multi-agency dispute over <i>messaging</i>, not vote
+      manipulation — the same dispute as the ICA minority view, captured live.
+    </div>
+  </section>
+
+  <section id="bottomline">
+    <div class="sec-head"><span class="n">07</span><h2>What the corpus does &amp; doesn’t support</h2>
+      <p>Reading only what the documents can actually carry.</p>
+      <span class="tier t1">TIER 1 · REPRODUCIBLE</span></div>
+    <div class="grid2">
+      <div class="card">
+        <div class="kicker" style="color:var(--ok)">Supported by the evidence</div>
+        <ul class="clean yes">
+          <li>Foreign interest in, and collection of, U.S. voter-registration data is real and long-standing.</li>
+          <li>Election software and local-government networks carry genuine, documented vulnerabilities.</li>
+          <li>A real 2020 Michigan fraudulent-<i>application</i> case existed — and was caught by officials.</li>
+          <li>The declassified files were redacted competently.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="kicker" style="color:var(--bad)">Not supported by this release</div>
+        <ul class="clean no">
+          <li>That any 2020 or 2024 vote count or election <i>outcome</i> was altered.</li>
+          <li>That “200M compromised records” means hacked machines rather than largely public data.</li>
+          <li>That noncitizen registration exists at outcome-determinative scale.</li>
+          <li>Any revival of the Venezuela / Dominion machine theory.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:16px">
+      <b>Bottom line (reproducible).</b> The underlying memos describe <b>data collection and social-media
+      influence operations</b>; none asserts that a voter roll, ballot, or tabulation was altered — and the
+      most forward-leaning memo itself carries the IC mainline judgment that Beijing has <i>"not deployed
+      influence efforts intended to change the outcome."</i>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+        <span class="tier t3">TIER 3 · INTERPRETATION — NOT ASSERTED AS FACT</span>
+      </div>
+      <p style="margin:0 0 10px;font-size:14.5px"><b>One reading:</b> the release couples genuinely-declassified
+      intelligence with narrative documents that supply framing the raw files don't establish — the gap
+      between what the framing invites readers to conclude and what the documents state is itself measurable
+      from the primary text — real espionage material acting as a <i>credibility carrier</i>, landing amid
+      live litigation over voter-data initiatives and ahead of the pre-election quiet period.</p>
+      <p style="margin:0 0 10px;font-size:14.5px"><b>The competing reading (steelman):</b> a good-faith effort
+      to warn states and harden election systems — supported by the sober, measured CISA report and the
+      footnoted threat overview included in the same package.</p>
+      <p style="margin:0;font-size:13.5px;color:var(--muted)"><b>Falsification tests:</b> had the release
+      omitted the court-rejected Venezuela theory and partisan phrasing, the good-faith reading would
+      dominate; had it led with the IC mainline rather than the minority view, a "suppression" framing
+      would be unsupported; if the timing is unrelated to the litigation/quiet-period calendar, the
+      "calibrated" reading weakens. Weigh them yourself — see FINDINGS.md, Tier 3.</p>
+    </div>
+  </section>
+
+  <footer>
+    METHOD · Python 3.14 · pikepdf · PyMuPDF · pdfminer.six · rapidocr · ds_store<br>
+    EVIDENCE · SHA-256 inventory, decoded AppleDouble xattrs + .DS_Store, PDF Info/XMP, redaction &amp; revision scans — all re-runnable<br>
+    VERIFY · <span class="mono">python scripts/trust_but_verify.py</span> re-derives the published dataset behind the Tier-1 metadata findings; Michigan quotes require re-deriving the withheld OCR; Tier-2 verdicts rest on the cited sources; CI re-runs the pipeline weekly<br>
+    FACT-CHECK · public record as of July 2026: reporting, court records, nonpartisan election-research bodies<br>
+    <i>Nullius in verba</i> — "take nobody's word for it" (Royal Society, 1660)
+    <div class="disclaim">This is an independent forensic and fact-checking analysis of publicly released files.
+      Metadata timestamps reflect activity on the assembling machine, not original authorship. Verdicts describe
+      the weight of the public record, not a legal finding.</div>
+  </footer>
+</div>
+
+<script>
+  (function(){
+    var btn=document.getElementById('tgl');
+    function cur(){var t=document.documentElement.getAttribute('data-theme');
+      if(t)return t;return matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';}
+    btn.addEventListener('click',function(){
+      var next=cur()==='dark'?'light':'dark';
+      document.documentElement.setAttribute('data-theme',next);
+    });
+  })();
+</script>
+</body>
+</html>

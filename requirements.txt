@@ -1,0 +1,16 @@
+# Pinned to the versions used for the published results (Python >= 3.11; run on 3.14).
+# The pins keep the metadata outputs byte-identical and the OCR output close;
+# OCR text can still differ by a few characters across CPUs (ONNX inference is
+# not bit-for-bit) — trust_but_verify.py compares OCR with a normalized
+# similarity threshold for that reason. See LIMITATIONS.md.
+pikepdf==10.10.0
+PyMuPDF==1.28.0
+pdfminer.six==20260107
+rapidocr-onnxruntime==1.2.3
+onnxruntime==1.27.0
+ds-store==1.3.3
+# Transitive dependencies pinned for reproducibility (imported directly by
+# scripts or load-bearing for OCR output):
+numpy==2.5.1
+opencv-python==5.0.0.93
+Pillow==12.3.0

@@ -1,0 +1,216 @@
+{
+  "name": "election-records-forensics-2026",
+  "abstract": "Reproducible file-metadata forensics and sourced fact-check of the four document archives published at whitehouse.gov/election-integrity (released 2026-07-16). Anchored to SHA-256 hashes of the official source archives so anyone can reproduce against the exact bytes.",
+  "license": {
+    "code": "MIT",
+    "data": "CC-BY-4.0",
+    "source_documents": "US Government work (public domain)"
+  },
+  "source_archives": [
+    {
+      "filename": "Vulnerabilities-in-Electronic-Voting-and-Ballot-Counting-Systems.zip",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/07/Vulnerabilities-in-Electronic-Voting-and-Ballot-Counting-Systems.zip",
+      "sha256": "165d85c466cb841643f7c5219340905889ae84cc5235264c78571cae22e7a607",
+      "bytes": 10438315
+    },
+    {
+      "filename": "Chinas-Acquisition-and-Exploitation-of-American-Voter-Data.zip",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/07/Chinas-Acquisition-and-Exploitation-of-American-Voter-Data.zip",
+      "sha256": "a823364d94ad5b9bca5dc42c10e8c4e0e782c3e6f0331e40dd600aaa27d041ce",
+      "bytes": 39515761
+    },
+    {
+      "filename": "Michigan-Voter-Registration-Investigation.zip",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/07/Michigan-Voter-Registration-Investigation.zip",
+      "sha256": "b73c4dee770bf6270174d3a55419498c7911ae133e0b01740bfac24ca69c40f6",
+      "bytes": 23514930
+    },
+    {
+      "filename": "Noncitizens-on-State-Voter-Rolls.zip",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/07/Noncitizens-on-State-Voter-Rolls.zip",
+      "sha256": "3291004b5f1631fba0f306a78027858b94d8ced1f740663c2fb6eccd7b34158e",
+      "bytes": 565400
+    }
+  ],
+  "external_archives": {
+    "note": "Independent Internet Archive captures of the official source URLs. For the four source archives, sha256_verified means the raw archived bytes (the id_ capture URL) were fetched and their SHA-256 matched the corresponding source_archives entry in manifest.json at verified_utc. The landing-page capture is a content snapshot (HTML; not hash-anchored). Re-verify any capture yourself: download the capture_url and compare against source_archives.",
+    "verified_utc": "2026-07-18T23:43:20Z",
+    "captures": [
+      {
+        "source_url": "https://www.whitehouse.gov/election-integrity/",
+        "archive": "web.archive.org",
+        "timestamp": "20260718082550",
+        "capture_url": "https://web.archive.org/web/20260718082550/https://www.whitehouse.gov/election-integrity/",
+        "content": "landing page snapshot"
+      },
+      {
+        "source_url": "https://www.whitehouse.gov/wp-content/uploads/2026/07/Vulnerabilities-in-Electronic-Voting-and-Ballot-Counting-Systems.zip",
+        "archive": "web.archive.org",
+        "timestamp": "20260717172609",
+        "capture_url": "https://web.archive.org/web/20260717172609id_/https://www.whitehouse.gov/wp-content/uploads/2026/07/Vulnerabilities-in-Electronic-Voting-and-Ballot-Counting-Systems.zip",
+        "sha256": "165d85c466cb841643f7c5219340905889ae84cc5235264c78571cae22e7a607",
+        "bytes": 10438315,
+        "sha256_verified": true
+      },
+      {
+        "source_url": "https://www.whitehouse.gov/wp-content/uploads/2026/07/Chinas-Acquisition-and-Exploitation-of-American-Voter-Data.zip",
+        "archive": "web.archive.org",
+        "timestamp": "20260718042031",
+        "capture_url": "https://web.archive.org/web/20260718042031id_/https://www.whitehouse.gov/wp-content/uploads/2026/07/Chinas-Acquisition-and-Exploitation-of-American-Voter-Data.zip",
+        "sha256": "a823364d94ad5b9bca5dc42c10e8c4e0e782c3e6f0331e40dd600aaa27d041ce",
+        "bytes": 39515761,
+        "sha256_verified": true
+      },
+      {
+        "source_url": "https://www.whitehouse.gov/wp-content/uploads/2026/07/Michigan-Voter-Registration-Investigation.zip",
+        "archive": "web.archive.org",
+        "timestamp": "20260717172614",
+        "capture_url": "https://web.archive.org/web/20260717172614id_/https://www.whitehouse.gov/wp-content/uploads/2026/07/Michigan-Voter-Registration-Investigation.zip",
+        "sha256": "b73c4dee770bf6270174d3a55419498c7911ae133e0b01740bfac24ca69c40f6",
+        "bytes": 23514930,
+        "sha256_verified": true
+      },
+      {
+        "source_url": "https://www.whitehouse.gov/wp-content/uploads/2026/07/Noncitizens-on-State-Voter-Rolls.zip",
+        "archive": "web.archive.org",
+        "timestamp": "20260717172615",
+        "capture_url": "https://web.archive.org/web/20260717172615id_/https://www.whitehouse.gov/wp-content/uploads/2026/07/Noncitizens-on-State-Voter-Rolls.zip",
+        "sha256": "3291004b5f1631fba0f306a78027858b94d8ced1f740663c2fb6eccd7b34158e",
+        "bytes": 565400,
+        "sha256_verified": true
+      }
+    ]
+  },
+  "published_files": [
+    {
+      "path": "data/README.md",
+      "sha256": "c2745841f9d8eb54aeb0d6d588b56b6965ba093bc72c456bea58247a37124834",
+      "bytes": 2822
+    },
+    {
+      "path": "data/SCRUB_LOG.json",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "bytes": 2
+    },
+    {
+      "path": "data/metadata/consolidated_findings.json",
+      "sha256": "eada03ccff5c3d3bf5b5139c68b5cfeab6f348924c48b10f5443fbcb41c916b3",
+      "bytes": 8648
+    },
+    {
+      "path": "data/metadata/dsstore.json",
+      "sha256": "bf52539842ab82452a602aa2c0fb9b597b7aece51f3a69a47bd33a3a29772a48",
+      "bytes": 273
+    },
+    {
+      "path": "data/metadata/duplicates.json",
+      "sha256": "60d9732dd5d8e38a5955b5392682ca57ce0f27ed31c003d6a5e11227b2a915cb",
+      "bytes": 1049
+    },
+    {
+      "path": "data/metadata/inventory.csv",
+      "sha256": "79ecaaa5babf56fb842214b07454f9c4f796f117a20b8a42fd13249b0574dfb3",
+      "bytes": 35638
+    },
+    {
+      "path": "data/metadata/macos_xattrs.json",
+      "sha256": "351ec1534d9428f36408a1b24e67bc1b7cdc594c3b7abb6f21a75b315e7dc11f",
+      "bytes": 37978
+    },
+    {
+      "path": "data/metadata/pdf_metadata.json",
+      "sha256": "5c2ab73da98a9a65d88b6996ef5425af793c2bca784af5a1341ceecaaa37d109",
+      "bytes": 46154
+    },
+    {
+      "path": "data/metadata/redaction_leaks.json",
+      "sha256": "a9d5a87e6ca752afbf9a4cd7224f5060a14df8ae653dc823589aae692495be37",
+      "bytes": 22767
+    },
+    {
+      "path": "data/metadata/revision_recovery.json",
+      "sha256": "ae014d93a59d9ec018952d06f30183cf9def04c24fddf35c1686eccb0ae5256f",
+      "bytes": 16610
+    },
+    {
+      "path": "data/ocr_intelligence/18_States_Memo_-_clean_-_declass_mark_Redacted.pdf.ocr.txt",
+      "sha256": "fee20ec876911c71e02d046bd6b816a8596dbcb62ac4771dec621115d52cb8a7",
+      "bytes": 2369
+    },
+    {
+      "path": "data/ocr_intelligence/200M_Voter_Records_Compromised_-_declass_marked_Redacted.pdf.ocr.txt",
+      "sha256": "8afa4b8c5ed4bf0dd29f1fa3ad6a22a9423b8cced26f610a7a0718fcd8f56c15",
+      "bytes": 7178
+    },
+    {
+      "path": "data/ocr_intelligence/CIA_Note_-_Venezuela_Machines_Intel_Memo_29JUNE2026_DECLASS_REDACTED.pdf.ocr.txt",
+      "sha256": "62d4ec368d0353d56e1a3ca235f59976df793dff90a7257d04a54ac20d1247b2",
+      "bytes": 11142
+    },
+    {
+      "path": "data/ocr_intelligence/EMAIL_ICA.CommentsReMinorityView_30DEC2020_DECLASS_REDACTED.pdf.ocr.txt",
+      "sha256": "8d5b493e9d845cf5834691d1977066fef6b1f5fa2ad9cf0e5eed652477f3ce6a",
+      "bytes": 3554
+    },
+    {
+      "path": "data/ocr_intelligence/EMAIL_RE_Please_coord_by_COB_9.1_-_4_country_election_security_graphic_03SEP2020_DECLASS_REDACTED_.pdf.ocr.txt",
+      "sha256": "f642b4e37113e924b2f2b4a43742cd45e96e73f03448cd9af669c43111256a8a",
+      "bytes": 22424
+    },
+    {
+      "path": "data/ocr_intelligence/NICM_ChinaStepsToInfluenceElection_16OCT2020_DECLASS_REDACTED.pdf.ocr.txt",
+      "sha256": "4f63c939f192ebeef8b8bcd58341a6cbfcdf642d0ede52411f205ad6b82d07ff",
+      "bytes": 13814
+    },
+    {
+      "path": "data/ocr_intelligence/Note_-_Sensitive_PRC_Reporting_from_2018-2020_DECLASS_REDACTED.pdf.ocr.txt",
+      "sha256": "b5cb34007766505870c88a8c5191c829df5ec02104d2275a6e87bea996e2330b",
+      "bytes": 3309
+    },
+    {
+      "path": "data/ocr_intelligence/PRC_Analsyis_on_US_Voter_Registration_Information_-_clean_-_declass_marked_Redacted.pdf.ocr.txt",
+      "sha256": "534cb7eeb35d3edcec9fb1c3c9186f5bcb0afada53b8242515ab41a39a7bc5f6",
+      "bytes": 1589
+    },
+    {
+      "path": "data/ocr_intelligence/PRC_Collection_of_US_VoterMilitaryData_-_clean_-_declass_marked_Redacted.pdf.ocr.txt",
+      "sha256": "603a09a95299373bce698c7bc825a3830673e402cc5243aabc38393242c4a40c",
+      "bytes": 766
+    },
+    {
+      "path": "data/ocr_intelligence/PRC_Target_2024_Election_2023_-_clean_-_declass_marked_Redacted.pdf.ocr.txt",
+      "sha256": "dd21aa3801c68a7cbdf0886b502da7a603059a2801c58f375c7927e0f829ab0a",
+      "bytes": 1658
+    },
+    {
+      "path": "data/ocr_intelligence/PRC_U.S._Presidential_Election-Related_Intelligence_in_2020_-_clean_-_declass_marked_Redacted.pdf.ocr.txt",
+      "sha256": "a6d792b95b140109ce74cda0f3f30f9795400bc854054251049a5233afe4a80d",
+      "bytes": 1589
+    },
+    {
+      "path": "data/ocr_intelligence/PRC_US_Voter_Data_7_States_2023_-_clean_-_declass_marked_Redacted.pdf.ocr.txt",
+      "sha256": "d9e960f2d030983bdb9e1cdf67f85094c1f98761fd37d1ae724c9b0c00c4b20d",
+      "bytes": 930
+    },
+    {
+      "path": "data/ocr_intelligence/Summary_-_clean_-_declass_marked_PART_1.pdf.ocr.txt",
+      "sha256": "e8695ed5fc8a48f435c1eef158f2444a392fdd5406d2e4664f2fd33a2dc10766",
+      "bytes": 1746
+    },
+    {
+      "path": "data/ocr_intelligence/Summary_-_clean_-_declass_marked_PART_2.pdf.ocr.txt",
+      "sha256": "5aa4dc7d936388c7d09264eb5f1a7a9f1ad0c047b8ef1984634b13160bfa7f3f",
+      "bytes": 1709
+    },
+    {
+      "path": "data/ocr_intelligence/Summary_-_clean_-_declass_marked_PART_3.pdf.ocr.txt",
+      "sha256": "676972f72c3b854f59072aec103159dac45a325e5c2959073e3d91eb5363c40b",
+      "bytes": 1474
+    },
+    {
+      "path": "data/ocr_intelligence/US_Voter_Registration__for_6_States_-_clean_-_declass_marked_Redacted.pdf.ocr.txt",
+      "sha256": "d45f608aa51d836b81b01d8b62058f70778434b7390fc74f5e7fbc9e75b7c2dc",
+      "bytes": 4277
+    }
+  ]
+}

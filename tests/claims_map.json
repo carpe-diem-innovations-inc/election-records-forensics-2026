@@ -1,0 +1,146 @@
+{
+  "_comment": "Claim map for scripts/claims_lint.py. Each claim: a data accessor ('file:dotted.path|filter'; files: cf = data/metadata/consolidated_findings.json, manifest = manifest.json; filters: len, sumvalues, count_prefix:<p>; 'derived:' = computed in claims_lint.py) plus the prose patterns (one capture group = the number, word forms accepted) that must agree with it. 'expect' pins a value so CI fails on silent drift; 'also_equals' asserts two data sources agree.",
+  "claims": [
+    {
+      "id": "pdf-documents-58",
+      "source": "cf:counts.pdf_documents",
+      "occurrences": [
+        {"file": "README.md", "pattern": "\\*\\*(\\d+) PDFs\\*\\* \\(55 unique\\)"},
+        {"file": "README.md", "pattern": "\\*\\*55 of (\\d+)\\*\\* documents have their authoring metadata stripped"},
+        {"file": "FINDINGS.md", "pattern": "55 of (\\d+) PDFs carry no Author"},
+        {"file": "docs/dashboard.html", "pattern": "(\\d+) PDFs · 55 unique · 269 pages"},
+        {"file": "docs/dashboard.html", "pattern": "\"v\">(\\d+)</div><div class=\"k\">PDF documents"},
+        {"file": "docs/dashboard.html", "pattern": "\"v\">55<span style=\"font-size:.5em\">/(\\d+)</span>"},
+        {"file": "docs/dashboard.html", "pattern": "Metadata absent from 55 of (\\d+)"}
+      ]
+    },
+    {
+      "id": "unique-hashes-55",
+      "source": "cf:counts.unique_pdf_hashes",
+      "occurrences": [
+        {"file": "README.md", "pattern": "\\*\\*58 PDFs\\*\\* \\((\\d+) unique\\)"},
+        {"file": "docs/dashboard.html", "pattern": "58 PDFs · (\\d+) unique"},
+        {"file": "docs/dashboard.html", "pattern": "<b>(\\d+) unique</b> by SHA-256"}
+      ]
+    },
+    {
+      "id": "metadata-stripped-55",
+      "source": "cf:producer_distribution.(stripped/none)",
+      "occurrences": [
+        {"file": "FINDINGS.md", "pattern": "(\\d+) of 58 PDFs carry no Author/Creator/Producer"},
+        {"file": "README.md", "pattern": "\\*\\*(\\d+) of 58\\*\\* documents have their authoring metadata stripped"},
+        {"file": "docs/dashboard.html", "pattern": "\"v\">(\\d+)<span style=\"font-size:.5em\">/58</span>"},
+        {"file": "docs/dashboard.html", "pattern": "Metadata absent from (\\d+) of 58"},
+        {"file": "docs/dashboard.html", "pattern": "Authoring metadata was removed from (\\d+) of 58 files"},
+        {"file": "docs/dashboard.html", "pattern": "The other <b>(\\d+) documents</b>"}
+      ]
+    },
+    {
+      "id": "total-pages-269",
+      "source": "cf:counts.total_pages",
+      "occurrences": [
+        {"file": "docs/dashboard.html", "pattern": "· (\\d+) pages ·"}
+      ]
+    },
+    {
+      "id": "appledouble-sidecars-64",
+      "source": "cf:counts.appledouble_sidecars",
+      "occurrences": [
+        {"file": "docs/dashboard.html", "pattern": "· (\\d+) macOS sidecar files"},
+        {"file": "docs/dashboard.html", "pattern": "62 of (\\d+) sidecars kept theirs"}
+      ]
+    },
+    {
+      "id": "quarantine-tagged-62",
+      "source": "cf:download_agents|sumvalues",
+      "occurrences": [
+        {"file": "docs/dashboard.html", "pattern": "(\\d+) of 64 sidecars kept theirs"}
+      ]
+    },
+    {
+      "id": "duplicate-groups-3",
+      "source": "cf:duplicates|len",
+      "occurrences": [
+        {"file": "FINDINGS.md", "pattern": "T1\\.3 — (Three|three|\\d+) documents are byte-identical duplicates"},
+        {"file": "docs/dashboard.html", "pattern": "\"v\">(\\d+)</div><div class=\"k\">byte-identical <b>duplicate</b> re-files"}
+      ]
+    },
+    {
+      "id": "redaction-docs-scanned-58",
+      "source": "cf:redaction.docs_scanned",
+      "occurrences": [
+        {"file": "docs/dashboard.html", "pattern": ">(\\d+) documents tested<"}
+      ]
+    },
+    {
+      "id": "redaction-leak-docs-2",
+      "source": "cf:redaction.docs_with_recoverable_text_under_boxes",
+      "occurrences": [
+        {"file": "docs/dashboard.html", "pattern": "font-size:26px\">(\\d+)</div><div class=\"k\">docs with any leak"}
+      ]
+    },
+    {
+      "id": "redaction-leak-spans-3",
+      "source": "cf:redaction.total_leaked_spans",
+      "occurrences": [
+        {"file": "docs/dashboard.html", "pattern": "chars — (three|Three|\\d+) occurrences of the form label"}
+      ]
+    },
+    {
+      "id": "redaction-leak-chars-18",
+      "source": "cf:redaction.total_leaked_chars",
+      "occurrences": [
+        {"file": "docs/dashboard.html", "pattern": "font-size:26px\">(\\d+)</div><div class=\"k\">chars — three occurrences"},
+        {"file": "docs/dashboard.html", "pattern": "\"v\">(\\d+)</div><div class=\"k\"><b>characters</b> recoverable under redactions"}
+      ]
+    },
+    {
+      "id": "archives-4",
+      "source": "cf:counts.archives",
+      "also_equals": ["manifest:source_archives|len"],
+      "occurrences": [
+        {"file": "README.md", "pattern": "for the (four|\\d+) document archives published at"},
+        {"file": "docs/dashboard.html", "pattern": "\"v\">(\\d+)</div><div class=\"k\">ZIP <b>archives</b>"}
+      ]
+    },
+    {
+      "id": "ocr-intelligence-files-16",
+      "source": "manifest:published_files|count_prefix:data/ocr_intelligence/",
+      "occurrences": [
+        {"file": "docs/dashboard.html", "pattern": "of (\\d+) intel memos claim a <b>vote was changed</b>"}
+      ]
+    },
+    {
+      "id": "manifest-published-files-26",
+      "source": "manifest:published_files|len",
+      "expect": 26,
+      "occurrences": []
+    },
+    {
+      "id": "download-window-38s",
+      "source": "derived:download_window_seconds",
+      "occurrences": [
+        {"file": "FINDINGS.md", "pattern": "within ~(\\d+) seconds"},
+        {"file": "README.md", "pattern": "~(\\d+)-second window"},
+        {"file": "docs/dashboard.html", "pattern": "\"v\">(\\d+)<span style=\"font-size:.5em\"> sec</span>"},
+        {"file": "docs/dashboard.html", "pattern": "inside a single (\\d+)-second window"}
+      ]
+    },
+    {
+      "id": "internal-dates-6",
+      "source": "cf:docs_with_any_internal_date",
+      "occurrences": [
+        {"file": "FINDINGS.md", "pattern": "Only (\\d+) retain any internal `/Info` dates"},
+        {"file": "README.md", "pattern": "Only (\\d+)\\s+files \\(5 unique documents"},
+        {"file": "docs/dashboard.html", "pattern": "Only (\\d+)\\s+files \\(5 unique documents"}
+      ]
+    },
+    {
+      "id": "named-states-rows",
+      "type": "state_rows",
+      "file": "docs/dashboard.html",
+      "pattern": "<td class=\"mono\"><b>(\\d+)</b> · ([A-Z *]+)</td>",
+      "expect_counts": [8, 6, 5]
+    }
+  ]
+}

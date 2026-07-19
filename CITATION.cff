@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Election Records Forensics 2026: a reproducible verification kit"
+abstract: >-
+  Reproducible file-metadata forensics and sourced fact-check of the four
+  document archives published at whitehouse.gov/election-integrity (released
+  16 July 2026). Findings are anchored to SHA-256 hashes of the official source
+  archives so anyone can reproduce them against the exact bytes.
+type: dataset
+version: 1.0.0
+date-released: 2026-07-19
+license:
+  - MIT
+  - CC-BY-4.0
+authors:
+  - family-names: "iridex-ai"
+    affiliation: "Carpe Diem Innovations Inc."
+    email: "iridex@carpedieminnovationsinc.com"
+    orcid: "https://orcid.org/0009-0003-9784-3396"
+keywords:
+  - document forensics
+  - metadata forensics
+  - reproducible research
+  - open data
+  - fact-checking
+  - election records
+repository-code: "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026"
+url: "https://carpe-diem-innovations-inc.github.io/election-records-forensics-2026/"

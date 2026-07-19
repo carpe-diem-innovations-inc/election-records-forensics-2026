@@ -1,0 +1,23 @@
+# Source documents are NOT committed — fetch them from manifest.json URLs.
+corpus/
+work/
+extracted/
+recovered/
+data_public/
+*.zip
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+reproenv/
+.pytest_cache/
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

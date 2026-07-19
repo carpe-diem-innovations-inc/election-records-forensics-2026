@@ -1,0 +1,409 @@
+--- page 1 ---
+DECLASSIFIED BY COUNSEL TOTHE PRESIDENT WARRINGTON ON 1O JULY 2O26
+SENSITIVE
+GOVERNMENT
+AGENCY
+)PRC
+:PRC
+PossessesListofLikelyLeaked, Compromised Datathat
+Included U.S.,
+Entities in
+2019;DataSetsApparentlyIncludeThoseRelatedto
+andVoterData/Pll
+APRC
+was in possession of a document as of
+2019thatcontaineda listof
+entities
+and the data
+yielded.While a comparatively small portion of the list's entries featured
+entities in
+the U.S.,most of the entries were targets in other countries.The
+datawasprimarilydatedfrombetween2009and2018
+Ofparticular note,the majority of the entities consisted ot
+data sets of personally
+identifiable information (Pll), potentially indicating that the bulk collection of such Pll had been their goal.
+Furthermore,thesePll-related data sets included several characterized as voter registration records.
+Page 1
+DECLASSIEIED BY COUNSEL TO THE PRESIDENT
+WARRINGTON ON10 JULY 2026
+--- page 2 ---
+-possessed a document as of
+2019that listed some
+data sets,
+ Of particular note, this list included 97 entries that were
+explicitlyidentifiedasoriginatingfromU.S.
+entities--thoughthemajorityof
+list
+consisted of data from other countries, with the entries' descriptions indicating that most of the data came from
+Thelistappearedtobeorganizedbasedoncertainfactors-
+Most
+of the data involved private companies, government organizations, and NGOs.
+Page2
+--- page 3 ---
+)U.S.Voter,Election-RelatedData
+Data Volume
+Name
+Date of Information
+ApparentContents
+2016
+Unspecified U.S. voter
+204.822.241records
+Includesvoters'names
+(45 GB)
+data (5)
+,ages, phone numbe
+rs,addresses,etc.
+Afile,downloaded
+by
+on
+indicatedhispossible
+possessionofthis data
+as well.
+2017
+NamedU.S.state1
+1.746.069records
+Includes voterIDs,
+full names, current
+voter database (5)
+addresses,previous
+addresses,birthdates
+, gender, and phone
+numbers.
+Page3
+--- page 4 ---
+Named U.S. state 2
+7,893,248 records
+2017
+Includes voter IDs,
+(5)
+voter database
+full names, current
+addresses,former
+addresses, birth dates,
+gender, and citizenship
+information.
+Named U.S.state3
+5,578,302 records (6+
+2017
+voter database
+GB)
+Named U.S. state 4
+Unknown
+Unknown
+Unknown
+voter database
+Named U.S.state5
+Unknown
+Unknown
+Unknown
+voter database
+Named U.S. state 6
+Unknown
+Unknown
+Unknown
+voterdatabase
+Named U.S.state 7
+Unknown
+Unknown
+Unknown
+voterdatabase
+Named U.S.state8
+Unknown
+Unknown
+Unknown
+voter database
+Emailsfromanamed
+7.42 GB
+2016
+Includeselection-relate
+U.S. person (5)
+d materials
+U.S.-Origin PIl
+Name
+Data Volume
+Area
+Date of Informatio
+Apparent Conte
+nts
+Page 4
+--- page 5 ---
+Unspecified U.S.
+28millionrecords
+citizen medical
+social
+(5)
+database
+securitynumbers,
+Named U.S.
+medical group's
+servers and impor
+tant data
+Named U.S.
+biogenetics group
+Named U.S.
+school
+Named U.S.
+business services
+company 1 (5)
+Page 5
+DECLASSIFIEDBY COUNSELTOTHEPRESIDENT
+WARRINGTONON10JULY2O26
+--- page 6 ---
+)CompromisedWebsites
+Name
+Data Volume
+Date of Information
+ApparentContents
+Named U.S. business
+records
+2016
+Unknown
+services company 2's
+complaints website
+data from
+named U.S.business
+services company 3 (5)
+datafrom
+records
+Datathatis unableto
+namedU.S.business
+be updated
+services company 4
+Named U.S. web servi
+records
+Includes email addre
+cescompany1
+sses,passwordsand
+data.
+Named U.S. web servi
+ces company 2
+Named U.S. web servi
+records
+Includesdomain
+ces company 3
+names,registered
+emailaddresses,login
+IDs,passwords,accou
+nt numbers, dates of
+registration,etc.
+Named U.S. web servi
+records
+2017
+Data unable to be
+ces company 4
+updated
+5.
+Page6
+DECLASSIFIED BY COUNSEL TO THE
+PRESIDENT
+WARRINGTONON10 JULY2026
+--- page 7 ---
+NamedU.S.webservi
+millionrecords
+2018
+Newly added data from
+ces company 5
+2018thatincludesfull
+names, addresses,
+telephone numbers,
+administrative offices
+and email addresses.
+Leaked data from
+2018
+Leaked data
+named U.S.cyber
+security company (5)
+"America"Exploit.in
+MB
+List was released in
+Includes email addre
+2017, but was marked
+sses and password
+as 2018
+datathatcanbeupdat
+ed.
+www.mac-torrents.com
+records
+2016
+(Appleapplication
+downloading site)
+Named U.S.email
+(presumably
+Unknown
+Includesemailaddre
+provider
+records)
+ssesandpasswords
+Named U.S.registered
+website
+biige.com
+2014
+--- page 8 ---
+DECLASSIFIED BY COUNSEL TO THE PRESIDENT
+WARRINGTONON10 JULY2026
+Social NetworkingWebsites
+Name
+records
+records
+Named U.S. social
+networkingcompany1
+(5)
+Named U.S. social
+records
+networkingcompany2
+(5)
+Named U.S. social
+networkingcompany3
+Named U.S. social
+networking company 4
+DECLASSIFIEDBYCOUNSEL TOTHE PRESIDENT
+WARRINGTONON10JULY2026
+--- page 9 ---
+Named U.S. social
+networkingcompany5
+Named U.S.social
+networkingcompany6
+Account information
+fromnamedU.S.socia
+Inetworking company
+(U//F
+)U.S.NGOs,ReligiousGroups,andProfessionalOrganizations
+Name
+Data Volume
+Date of Information
+ApparentContents
+NamedU.S.labor
+organization 1
+--- page 10 ---
+NamedU.S.labor
+organization 2
+Named U.S.religious
+media organization
+U.S.-based internatio
+nal law organization
+"2014BusinessCards"
+Named U.S. lawyer
+association
+Named U.S. law enfor
+cement association (5)
+--- page 11 ---
+Named U.S.trade
+association 1
+NamedU.S.thinktank
+Unknown
+1 (5)
+Named U.S.travel
+company
+(U)
+OtherPrivateU.S.Entities
+Sector
+Industry
+U.S.ThinkTanks
+Software
+5.
+DECLASSIFIEDBYCOUNSELTOTHE
+PRESIDENT
+WARRINGTONON10JULY2026
+--- page 12 ---
+)UnitedStatesGovernmentEntities
+--- page 13 ---
+DECLASSIFIED BY COUNSEL TOTHEPRESIDENT WARRINGTON ON 1OJULY 2O26
+UnitedStatesGovernmentData
+Name
+DataVolume
+DateofInformation
+ApparentContents
+Page13
+DECLASSIFIED BYCOUNSELTOTHEPRESIDENT
+WARRINGTONON1OJULY2026
+--- page 14 ---
+Named U.S. publisher
+2017
+Military maps and
+records in PDF format
+((publiclyreleasedinfor
+2013-2016
+Publicly leaked U.S.
+mation about alleged
+data
+NSA intelligence colle
+ction activities) (5)
+Publiclyleaked email
+sfromanamedformer
+U.S. official
+and more
+1998-2012
+Downloaded data
+from a
+computer--suchasthe
+initial evaluationsF-15
+fighter jet maintenanc
+eandtechnicalmanua
+I, and other docum
+entationdatedbetwe
+en1998 and 2012
+Named U.S. cleared
+documents
+2015
+2017
+A U.S.
+defense contractor 1
+and
+datab
+ervice contr
+aserecords in a TXT
+actor, with a catalog
+file
+Named U.S. cleared
+documents and
+2012
+A u.S.
+defense contractor 2
+service contr
+documents
+actor
+Named U.S. cleared
+2013
+A U.S.
+defense contractor 3
+ervice contr
+actor
+Named U.S. cleared
+attachment
+2015
+defensecontractor 4
+sand
+emails
+--- page 15 ---
+DECLASSIFIED BYCOUNSEL TOTHE PRESIDENTWARRINGTONON1OJULY2O26
+DECLASSIFIEDBYCOUNSELTOTHE
+PRESIDENT
+WARRINGTONON10JULY2O26
+--- page 16 ---
+
+--- page 17 ---
+DECLASSIFIEDBYCOUNSELTOTHEPRESIDENT
+WARRINGTONON10JULY2O26
+--- page 18 ---
+DECLASSIFIEDBY COUNSEL TO THE PRESIDENTWARRINGTON ON 1O JULY 2O26
+DECLASSIFIEDBYCOUNSELTOTHEPRESIDENT
+WARRINGTONON10JULY2O26
+--- page 19 ---
+DECLASSIFIED BY COUNSEL TO THE
+PRESIDENT
+WARRINGTONON10JULY2026
+DECLASSIFIED BY COUNSEL TO THE PRESIDENT
+WARRINGTONON10JULY2O26
+--- page 20 ---
+DECLASSIFIED BY COUNSELTOTHEPRESIDENT
+WARRINGTONON10JULY2026
+--- page 21 ---
+DECLASSIFIEDBYCOUNSELTOTHE PRESIDENT
+WARRINGTONON10JULY2026
+--- page 22 ---
+Page22
+DECLASSIFIEDBYCOUNSELTOTHEPRESIDENT
+WARRINGTONON10JULY2026
+--- page 23 ---
+
+--- page 24 ---

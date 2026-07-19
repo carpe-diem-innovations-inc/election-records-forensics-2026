@@ -1,0 +1,203 @@
+{
+  "counts": {
+    "archives": 4,
+    "total_files_in_archives": 124,
+    "pdf_documents": 58,
+    "unique_pdf_hashes": 55,
+    "appledouble_sidecars": 64,
+    "dsstore": 2,
+    "total_pages": 269,
+    "total_embedded_images": 310
+  },
+  "duplicates": [
+    {
+      "sha256": "1be94e7fa86a729a2c16266fd32ed1947793903b5fa50577c9648c697dc0c48b",
+      "copies": [
+        "1. Vulnerabilities in Electronic Voting and Ballot-Counting Systems/CIA Wire Memo Summer 2020 DECLASS REDACTED.pdf",
+        "2. China\u2019s Acquisition and Exploitation of American Voter Data/CIA Wire Memo Summer 2020 DECLASS_REDACTED.pdf"
+      ]
+    },
+    {
+      "sha256": "efa073c1baba2f629a41e0c29841a15acf00dc1b7c4ea62fa9e0b208a69619fe",
+      "copies": [
+        "1. Vulnerabilities in Electronic Voting and Ballot-Counting Systems/EMAIL_Everyone's favorite topic_23DEC2021_DECLASS_REDACTED.pdf",
+        "2. China\u2019s Acquisition and Exploitation of American Voter Data/EMAIL_Everyone's favorite topic 23DEC2021 - DECLASS_REDACTED.pdf"
+      ]
+    },
+    {
+      "sha256": "6e22be494ee83716d2251e71c253ea6d78048694886b7006ce449a336aa9882b",
+      "copies": [
+        "1. Vulnerabilities in Electronic Voting and Ballot-Counting Systems/NICA_ Foreign Threats to 2020 US election_19AUG2020 - DECLASS_REDACTED.pdf",
+        "2. China\u2019s Acquisition and Exploitation of American Voter Data/NICA Foreign Threats To 2020 US Election_19AUG2020 DECLASS_REDACTED.pdf"
+      ]
+    }
+  ],
+  "download_events": [
+    {
+      "event_uuid": "3117A3CC-14AB-411A-A92E-95BFA453A88B",
+      "agent": "Chrome",
+      "time_utc": "2026-07-16T16:02:35Z",
+      "file_count": 8,
+      "files": [
+        "1. Vulnerabilities in Electronic Voting and Ballot-Counting Systems",
+        "CIA Note - Venezuela Machines Intel Memo_29JUNE2026_DECLASS_REDACTED.pdf",
+        "CIA Wire Memo Summer 2020 DECLASS REDACTED.pdf",
+        "EMAIL_Everyone's favorite topic_23DEC2021_DECLASS_REDACTED.pdf",
+        "EMAIL_ICA.CommentsReMinorityView_30DEC2020_DECLASS REDACTED.pdf",
+        "NICA_ Foreign Threats to 2020 US election_19AUG2020 - DECLASS_REDACTED.pdf",
+        "NICM_ChinaStepsToInfluenceElection_16OCT2020_DECLASS_REDACTED.pdf",
+        "NICM_VulnerabilitiesInUS2020ElectionInfrastructure_15JAN2020_DECLASS_REDACTEDed.pdf"
+      ]
+    },
+    {
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "agent": "Chrome",
+      "time_utc": "2026-07-16T16:02:57Z",
+      "file_count": 23,
+      "files": [
+        "18 States Memo - clean - declass mark_Redacted.pdf",
+        "2. China\u2019s Acquisition and Exploitation of American Voter Data",
+        "200M Voter Records Compromised - declass marked_Redacted.pdf",
+        "CIA Wire Memo Summer 2020 DECLASS_REDACTED.pdf",
+        "EMAIL_Everyone's favorite topic 23DEC2021 - DECLASS_REDACTED.pdf",
+        "EMAIL_NSA.MassagedPDB_20NOV2020_DECLASS_REDACT.pdf",
+        "EMAIL_NSA.MassagedPDB_23NOV2020_DECLASS_REDACT.pdf",
+        "EMAIL_RE For IC coord by Oct 7 2020  7OCT2020 DECLASS REDACTED.pdf",
+        "EMAIL_RE Please coord by COB 9.1 - 4 country election security graphic 03SEP2020_DECLASS_REDACTED .pdf",
+        "FBI_ALBANY_IIR_PROVIDED_TO_CHAIRMAN GRASSLEY .pdf",
+        "NICA Foreign Threats To 2020 US Election_19AUG2020 DECLASS_REDACTED.pdf",
+        "Note - Sensitive PRC Reporting from 2018-2020 DECLASS_REDACTED.pdf",
+        "PDB 25JUN2020_DECLASS_REDACTED.pdf",
+        "PRC Analsyis on US Voter Registration Information - clean - declass marked_Redacted.pdf",
+        "PRC Collection of US VoterMilitaryData - clean - declass marked_Redacted.pdf",
+        "PRC Target 2024 Election 2023 - clean - declass marked_Redacted.pdf",
+        "PRC U.S. Presidential Election-Related Intelligence in 2020 - clean - declass marked_Redacted.pdf",
+        "PRC US Voter Data 7 States 2023 - clean - declass marked_Redacted.pdf",
+        "Summary - clean - declass marked PART 1.pdf",
+        "Summary - clean - declass marked PART 2.pdf",
+        "Summary - clean - declass marked PART 3.pdf",
+        "Tasking_3_AlbanyBriefingHandout_297E_HQ_A4095996_NotSerialized-JET-R RELEASE MARKED.pdf",
+        "US Voter Registration  for 6 States - clean - declass marked_Redacted.pdf"
+      ]
+    },
+    {
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "agent": "Chrome",
+      "time_utc": "2026-07-16T16:03:05Z",
+      "file_count": 26,
+      "files": [
+        "0000001 - RELEASE MARKED.pdf",
+        "196 - RELEASE MARKED.pdf",
+        "233 - RELEASE MARKED.pdf",
+        "265_0000001 - RELEASE MARKED.pdf",
+        "3. Michigan Voter-Registration Investigation",
+        "FBIMichigan 2021 Dont Want To Close Memo RELEASE MARKED.pdf",
+        "FBIMichigan Fake Voter 3 Memo RELEASE MARKED.pdf",
+        "FBIMichigan Fake Voter Memo 1 RELEASE MARKED.pdf",
+        "FBIMichigan Fake Voter Memo 2 RELEASE MARKED.pdf",
+        "FBIMichigan Four Year Case Timeline RELEASE MARKED.pdf",
+        "FBIMichigan Fraudulent Registration Applications 91 of 107 RELEASE MARKED.pdf",
+        "FBIMichigan Fraudulent Request Memo2 RELEASE MARKED.pdf",
+        "FBIMichigan Orginal Muskego MSP Referral RELEASE MARKED.pdf",
+        "FBIMichigan PIN2023 Delay Memo - RELEASE MARKED.pdf",
+        "FBIMichigan Voter Confirms She Did Not Register But Got Ballot RELEASE MARKED.pdf",
+        "FBIMichigan Witness Interview Memo Gift Cards Suppress Trump RELEASE MARKED.pdf",
+        "FBIMichigan Witness Interview Memo Other States RELEASE MARKED.pdf",
+        "FBIMichigan Witness Interview Memo Paid By Registration Others Falsified RELEASE MARKED.pdf",
+        "FBIMichigan Witness Interview Memo Pot For Registrations RELEASE MARKED.pdf",
+        "FBIMichigan Witness Interview Memo Probably Forged Memos RELEASE MARKED.pdf",
+        "FBIMichigan Witness Interview Widespread Fake Registrations RELEASE MARKED.pdf",
+        "FBIMichigan Worker Interview Sit In Car Fake Registrations RELEASE MARKED.pdf",
+        "GBI Strategies -RELEASE MARKED.pdf",
+        "PIN EDMI declination - RELEASE MARKED.pdf",
+        "PIN GBI Declination - RELEASE MARKED.pdf",
+        "Voter Fraud Spreadsheet - RELEASE MARKED.pdf"
+      ]
+    },
+    {
+      "event_uuid": "774B0A10-E952-4C24-AA35-34E99A1E8D8C",
+      "agent": "Chrome",
+      "time_utc": "2026-07-16T16:03:13Z",
+      "file_count": 3,
+      "files": [
+        "4. Noncitizens on State Voter Rolls",
+        "Alien Voter Registration Summary.pdf_Redacted.pdf",
+        "Voter Registration Database Threats - FINAL.pdf"
+      ]
+    },
+    {
+      "event_uuid": "",
+      "agent": "AdobeAcrobat",
+      "time_utc": "2026-07-16T16:14:24Z",
+      "file_count": 1,
+      "files": [
+        "CISA Election Report - FINAL.pdf"
+      ]
+    },
+    {
+      "event_uuid": "",
+      "agent": "Mattermost",
+      "time_utc": "2026-07-16T16:25:47Z",
+      "file_count": 1,
+      "files": [
+        "WHTF Government Transparency - States Statement FINAL.pdf"
+      ]
+    }
+  ],
+  "download_agents": {
+    "Chrome": 60,
+    "AdobeAcrobat": 1,
+    "Mattermost": 1
+  },
+  "producer_distribution": {
+    "(stripped/none)": 55,
+    "Adobe PDF Library 26.1.187": 1,
+    "iText 2.1.7 by 1T3XT": 1,
+    "Microsoft\u00ae Word for Microsoft 365": 1
+  },
+  "docs_with_any_internal_date": 6,
+  "docs_metadata_retained": [
+    {
+      "filename": "CISA Election Report - FINAL.pdf",
+      "Producer": "Adobe PDF Library 26.1.187",
+      "Creator": "Acrobat PDFMaker 26 for Word",
+      "CreationDate": "2026-07-13T18:14:12-04'00'",
+      "ModDate": "2026-07-16T12:14:24-04'00'"
+    },
+    {
+      "filename": "FBI_ALBANY_IIR_PROVIDED_TO_CHAIRMAN GRASSLEY .pdf",
+      "Producer": "iText 2.1.7 by 1T3XT",
+      "Creator": null,
+      "CreationDate": null,
+      "ModDate": "2025-07-01T10:32:23-04'00'"
+    },
+    {
+      "filename": "Voter Registration Database Threats - FINAL.pdf",
+      "Producer": "Microsoft\u00ae Word for Microsoft 365",
+      "Creator": "Microsoft\u00ae Word for Microsoft 365",
+      "CreationDate": "2026-06-24T13:41:52-04'00'",
+      "ModDate": "2026-07-13T17:55:00-04'00'"
+    }
+  ],
+  "scanned_vs_text": {
+    "low_text_scanned": 29,
+    "text_rich": 29
+  },
+  "redaction": {
+    "docs_scanned": 58,
+    "docs_with_recoverable_text_under_boxes": 2,
+    "total_leaked_spans": 3,
+    "total_leaked_chars": 18,
+    "leaked_samples": [
+      {
+        "filename": "EMAIL_NSA.MassagedPDB_20NOV2020_DECLASS_REDACT.pdf",
+        "chars": 12
+      },
+      {
+        "filename": "EMAIL_RE For IC coord by Oct 7 2020  7OCT2020 DECLASS REDACTED.pdf",
+        "chars": 6
+      }
+    ],
+    "conclusion": "recoverable text under the vectors tested is limited to: 'Dated:'"
+  }
+}

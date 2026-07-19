@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Election Records Forensics 2026 — a reproducible verification kit</title>
+<meta name="description" content="Reproducible file-metadata forensics and sourced fact-check of the four document archives published at whitehouse.gov/election-integrity (16 July 2026). Neutral, source-anchored, and re-derivable from the official files.">
+<link rel="canonical" href="https://carpe-diem-innovations-inc.github.io/election-records-forensics-2026/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍁</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Election Records Forensics 2026">
+<meta property="og:title" content="Election Records Forensics 2026 — a reproducible verification kit">
+<meta property="og:description" content="Examine the files, cross-check the claims. Neutral, source-anchored, reproducible. Don't trust it — test your own reality.">
+<meta property="og:url" content="https://carpe-diem-innovations-inc.github.io/election-records-forensics-2026/">
+<meta property="og:image" content="https://carpe-diem-innovations-inc.github.io/election-records-forensics-2026/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://carpe-diem-innovations-inc.github.io/election-records-forensics-2026/og.png">
+<meta name="theme-color" content="#171d33">
+<meta name="robots" content="index,follow">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dataset",
+      "name": "Election Records Forensics 2026",
+      "description": "Reproducible file-metadata forensics and sourced fact-check of the four document archives published at whitehouse.gov/election-integrity (released 2026-07-16). Anchored to SHA-256 hashes of the official source archives.",
+      "url": "https://carpe-diem-innovations-inc.github.io/election-records-forensics-2026/",
+      "datePublished": "2026-07-17",
+      "creator": {"@type":"Person","@id":"https://orcid.org/0009-0003-9784-3396","name":"iridex-ai","affiliation":{"@type":"Organization","name":"Carpe Diem Innovations Inc."}},
+      "sameAs": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026",
+      "isAccessibleForFree": true,
+      "temporalCoverage": "2026",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creativeWorkStatus": "Published",
+      "keywords": ["document forensics","metadata forensics","reproducible research","open data","fact-checking","election records"],
+      "isBasedOn": "https://www.whitehouse.gov/election-integrity/",
+      "distribution": [
+        {"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/blob/main/manifest.json"},
+        {"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/blob/main/data/metadata/inventory.csv"}
+      ]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "election-records-forensics-2026",
+      "codeRepository": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026",
+      "programmingLanguage": "Python",
+      "license": "https://spdx.org/licenses/MIT.html"
+    }
+  ]
+}
+</script>
+<style>
+  :root{--bg:#eef1f4;--surface:#fff;--ink:#15181e;--muted:#5b626f;--hair:#d7dce2;--accent:#9a6b1e}
+  @media(prefers-color-scheme:dark){:root{--bg:#111318;--surface:#181b22;--ink:#e9ecf1;--muted:#a2a9b6;--hair:#2a2f3a;--accent:#d3a058}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+  .wrap{max-width:820px;margin:0 auto;padding:clamp(24px,5vw,64px) 20px}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(28px,5vw,44px);line-height:1.1;margin:.2em 0;text-wrap:balance}
+  .eyebrow{font-family:ui-monospace,Consolas,monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600}
+  .lede{font-size:clamp(16px,2.2vw,20px);color:var(--muted);max-width:62ch}
+  .quote{border-left:3px solid var(--accent);padding:10px 18px;margin:22px 0;background:var(--surface);border-radius:0 8px 8px 0;font-size:15px}
+  h2{font-family:Georgia,serif;margin:34px 0 8px;font-size:22px}
+  ul{padding-left:20px} li{margin:6px 0;color:var(--ink)}
+  .tiers li{color:var(--muted)} .tiers b{color:var(--ink)}
+  a{color:var(--accent)}
+  .btns{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}
+  .btn{display:inline-block;padding:10px 16px;border:1px solid var(--hair);border-radius:8px;background:var(--surface);color:var(--ink);text-decoration:none;font-size:14px}
+  .btn:hover{border-color:var(--accent)}
+  footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--hair);color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Metadata forensics · sourced fact-check · reproducible</div>
+  <h1>Election Records Forensics 2026</h1>
+  <p class="lede">An open method and dataset for examining the four document archives published at
+    <span style="font-family:ui-monospace,monospace">whitehouse.gov/election-integrity</span> (released
+    16 July 2026): the files' metadata and structure, the integrity of their redactions, the text of the
+    underlying memos, and how the claims compare to the public record.</p>
+
+  <div class="quote"><b>Don't trust this. Test your own reality.</b> Every finding is re-derivable from the
+    official source files. Reproducibility is anchored to SHA-256 hashes — if your re-download matches, you
+    are analyzing the exact same bytes. One command re-derives it all:
+    <span style="font-family:ui-monospace,monospace">python scripts/trust_but_verify.py</span> — and a weekly
+    CI run repeats it in public.</div>
+
+  <h2>What it is — and isn't</h2>
+  <ul>
+    <li><b>Is:</b> a neutral, non-partisan, source-anchored verification kit; a worked example of document forensics.</li>
+    <li><b>Isn't:</b> an accusation or a claim that any election was altered. Interpretation is labeled as interpretation.</li>
+  </ul>
+
+  <h2>How to read the findings</h2>
+  <ul class="tiers">
+    <li><b>Tier 1 — Reproducible fact.</b> Re-derivable with the scripts.</li>
+    <li><b>Tier 2 — Sourced fact-check.</b> Claims vs. the public record.</li>
+    <li><b>Tier 3 — Interpretation.</b> Fenced; ships with a steelman and a falsification test.</li>
+  </ul>
+
+  <div class="btns">
+    <a class="btn" href="dashboard.html">Visual dashboard</a>
+    <a class="btn" href="https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026">Repository &amp; data</a>
+    <a class="btn" href="https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/blob/main/FINDINGS.md">Findings</a>
+    <a class="btn" href="https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/blob/main/METHODOLOGY.md">Reproduce it</a>
+  </div>
+
+  <footer>
+    AI-assisted and human-checkable end to end. Source documents are U.S. Government works (public domain);
+    they are not redistributed here — retrieve them from the official URLs in the manifest. Code: MIT ·
+    Data/text: CC-BY-4.0. <i>Nullius in verba</i> — "take nobody's word for it" (Royal Society, 1660).
+  </footer>
+</div>
+</body>
+</html>

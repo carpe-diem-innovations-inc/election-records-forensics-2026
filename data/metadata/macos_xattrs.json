@@ -1,0 +1,1014 @@
+[
+  {
+    "sidecar": "__MACOSX/._1. Vulnerabilities in Electronic Voting and Ballot-Counting Systems",
+    "target": "1. Vulnerabilities in Electronic Voting and Ballot-Counting Systems",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a59009b;Chrome;3117A3CC-14AB-411A-A92E-95BFA453A88B",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:35Z",
+      "download_time_epoch": 1784217755,
+      "agent": "Chrome",
+      "event_uuid": "3117A3CC-14AB-411A-A92E-95BFA453A88B"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/._2. China\u2019s Acquisition and Exploitation of American Voter Data",
+    "target": "2. China\u2019s Acquisition and Exploitation of American Voter Data",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/._3. Michigan Voter-Registration Investigation",
+    "target": "3. Michigan Voter-Registration Investigation",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/._4. Noncitizens on State Voter Rolls",
+    "target": "4. Noncitizens on State Voter Rolls",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900c1;Chrome;774B0A10-E952-4C24-AA35-34E99A1E8D8C",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:13Z",
+      "download_time_epoch": 1784217793,
+      "agent": "Chrome",
+      "event_uuid": "774B0A10-E952-4C24-AA35-34E99A1E8D8C"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/1. Vulnerabilities in Electronic Voting and Ballot-Counting Systems/._CIA Note - Venezuela Machines Intel Memo_29JUNE2026_DECLASS_REDACTED.pdf",
+    "target": "CIA Note - Venezuela Machines Intel Memo_29JUNE2026_DECLASS_REDACTED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a59009b;Chrome;3117A3CC-14AB-411A-A92E-95BFA453A88B",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:35Z",
+      "download_time_epoch": 1784217755,
+      "agent": "Chrome",
+      "event_uuid": "3117A3CC-14AB-411A-A92E-95BFA453A88B"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/1. Vulnerabilities in Electronic Voting and Ballot-Counting Systems/._CIA Wire Memo Summer 2020 DECLASS REDACTED.pdf",
+    "target": "CIA Wire Memo Summer 2020 DECLASS REDACTED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a59009b;Chrome;3117A3CC-14AB-411A-A92E-95BFA453A88B",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:35Z",
+      "download_time_epoch": 1784217755,
+      "agent": "Chrome",
+      "event_uuid": "3117A3CC-14AB-411A-A92E-95BFA453A88B"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/1. Vulnerabilities in Electronic Voting and Ballot-Counting Systems/._CISA Election Report - FINAL.pdf",
+    "target": "CISA Election Report - FINAL.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 182,
+    "quarantine": {
+      "raw": "q/0082;6a590360;AdobeAcrobat;",
+      "flags": "q/0082",
+      "download_time_utc": "2026-07-16T16:14:24Z",
+      "download_time_epoch": 1784218464,
+      "agent": "AdobeAcrobat",
+      "event_uuid": ""
+    }
+  },
+  {
+    "sidecar": "__MACOSX/1. Vulnerabilities in Electronic Voting and Ballot-Counting Systems/._EMAIL_Everyone's favorite topic_23DEC2021_DECLASS_REDACTED.pdf",
+    "target": "EMAIL_Everyone's favorite topic_23DEC2021_DECLASS_REDACTED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a59009b;Chrome;3117A3CC-14AB-411A-A92E-95BFA453A88B",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:35Z",
+      "download_time_epoch": 1784217755,
+      "agent": "Chrome",
+      "event_uuid": "3117A3CC-14AB-411A-A92E-95BFA453A88B"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/1. Vulnerabilities in Electronic Voting and Ballot-Counting Systems/._EMAIL_ICA.CommentsReMinorityView_30DEC2020_DECLASS REDACTED.pdf",
+    "target": "EMAIL_ICA.CommentsReMinorityView_30DEC2020_DECLASS REDACTED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a59009b;Chrome;3117A3CC-14AB-411A-A92E-95BFA453A88B",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:35Z",
+      "download_time_epoch": 1784217755,
+      "agent": "Chrome",
+      "event_uuid": "3117A3CC-14AB-411A-A92E-95BFA453A88B"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/1. Vulnerabilities in Electronic Voting and Ballot-Counting Systems/._NICA_ Foreign Threats to 2020 US election_19AUG2020 - DECLASS_REDACTED.pdf",
+    "target": "NICA_ Foreign Threats to 2020 US election_19AUG2020 - DECLASS_REDACTED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a59009b;Chrome;3117A3CC-14AB-411A-A92E-95BFA453A88B",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:35Z",
+      "download_time_epoch": 1784217755,
+      "agent": "Chrome",
+      "event_uuid": "3117A3CC-14AB-411A-A92E-95BFA453A88B"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/1. Vulnerabilities in Electronic Voting and Ballot-Counting Systems/._NICM_ChinaStepsToInfluenceElection_16OCT2020_DECLASS_REDACTED.pdf",
+    "target": "NICM_ChinaStepsToInfluenceElection_16OCT2020_DECLASS_REDACTED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a59009b;Chrome;3117A3CC-14AB-411A-A92E-95BFA453A88B",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:35Z",
+      "download_time_epoch": 1784217755,
+      "agent": "Chrome",
+      "event_uuid": "3117A3CC-14AB-411A-A92E-95BFA453A88B"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/1. Vulnerabilities in Electronic Voting and Ballot-Counting Systems/._NICM_VulnerabilitiesInUS2020ElectionInfrastructure_15JAN2020_DECLASS_REDACTEDed.pdf",
+    "target": "NICM_VulnerabilitiesInUS2020ElectionInfrastructure_15JAN2020_DECLASS_REDACTEDed.pdf",
+    "xattr_names": [
+      "com.apple.lastuseddate#PS",
+      "com.apple.quarantine"
+    ],
+    "size": 268,
+    "quarantine": {
+      "raw": "q/0083;6a59009b;Chrome;3117A3CC-14AB-411A-A92E-95BFA453A88B",
+      "flags": "q/0083",
+      "download_time_utc": "2026-07-16T16:02:35Z",
+      "download_time_epoch": 1784217755,
+      "agent": "Chrome",
+      "event_uuid": "3117A3CC-14AB-411A-A92E-95BFA453A88B"
+    },
+    "other_xattrs_hexpreview": {
+      "com.apple.lastuseddate#PS": "4156596a00000000f580d60f00000000"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._18 States Memo - clean - declass mark_Redacted.pdf",
+    "target": "18 States Memo - clean - declass mark_Redacted.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._200M Voter Records Compromised - declass marked_Redacted.pdf",
+    "target": "200M Voter Records Compromised - declass marked_Redacted.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._CIA Wire Memo Summer 2020 DECLASS_REDACTED.pdf",
+    "target": "CIA Wire Memo Summer 2020 DECLASS_REDACTED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._EMAIL_Everyone's favorite topic 23DEC2021 - DECLASS_REDACTED.pdf",
+    "target": "EMAIL_Everyone's favorite topic 23DEC2021 - DECLASS_REDACTED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._EMAIL_NSA.MassagedPDB_20NOV2020_DECLASS_REDACT.pdf",
+    "target": "EMAIL_NSA.MassagedPDB_20NOV2020_DECLASS_REDACT.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._EMAIL_NSA.MassagedPDB_23NOV2020_DECLASS_REDACT.pdf",
+    "target": "EMAIL_NSA.MassagedPDB_23NOV2020_DECLASS_REDACT.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._EMAIL_RE For IC coord by Oct 7 2020  7OCT2020 DECLASS REDACTED.pdf",
+    "target": "EMAIL_RE For IC coord by Oct 7 2020  7OCT2020 DECLASS REDACTED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._EMAIL_RE Please coord by COB 9.1 - 4 country election security graphic 03SEP2020_DECLASS_REDACTED .pdf",
+    "target": "EMAIL_RE Please coord by COB 9.1 - 4 country election security graphic 03SEP2020_DECLASS_REDACTED .pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._FBI_ALBANY_IIR_PROVIDED_TO_CHAIRMAN GRASSLEY .pdf",
+    "target": "FBI_ALBANY_IIR_PROVIDED_TO_CHAIRMAN GRASSLEY .pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._NICA Foreign Threats To 2020 US Election_19AUG2020 DECLASS_REDACTED.pdf",
+    "target": "NICA Foreign Threats To 2020 US Election_19AUG2020 DECLASS_REDACTED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._Note - Sensitive PRC Reporting from 2018-2020 DECLASS_REDACTED.pdf",
+    "target": "Note - Sensitive PRC Reporting from 2018-2020 DECLASS_REDACTED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._PDB 25JUN2020_DECLASS_REDACTED.pdf",
+    "target": "PDB 25JUN2020_DECLASS_REDACTED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._PRC Analsyis on US Voter Registration Information - clean - declass marked_Redacted.pdf",
+    "target": "PRC Analsyis on US Voter Registration Information - clean - declass marked_Redacted.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._PRC Collection of US VoterMilitaryData - clean - declass marked_Redacted.pdf",
+    "target": "PRC Collection of US VoterMilitaryData - clean - declass marked_Redacted.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._PRC Target 2024 Election 2023 - clean - declass marked_Redacted.pdf",
+    "target": "PRC Target 2024 Election 2023 - clean - declass marked_Redacted.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._PRC U.S. Presidential Election-Related Intelligence in 2020 - clean - declass marked_Redacted.pdf",
+    "target": "PRC U.S. Presidential Election-Related Intelligence in 2020 - clean - declass marked_Redacted.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._PRC US Voter Data 7 States 2023 - clean - declass marked_Redacted.pdf",
+    "target": "PRC US Voter Data 7 States 2023 - clean - declass marked_Redacted.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._Summary - clean - declass marked PART 1.pdf",
+    "target": "Summary - clean - declass marked PART 1.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._Summary - clean - declass marked PART 2.pdf",
+    "target": "Summary - clean - declass marked PART 2.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._Summary - clean - declass marked PART 3.pdf",
+    "target": "Summary - clean - declass marked PART 3.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._Tasking_3_AlbanyBriefingHandout_297E_HQ_A4095996_NotSerialized-JET-R RELEASE MARKED.pdf",
+    "target": "Tasking_3_AlbanyBriefingHandout_297E_HQ_A4095996_NotSerialized-JET-R RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._US Voter Registration  for 6 States - clean - declass marked_Redacted.pdf",
+    "target": "US Voter Registration  for 6 States - clean - declass marked_Redacted.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b1;Chrome;8624F216-DAF1-482C-B7EB-E966DC05E39D",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:02:57Z",
+      "download_time_epoch": 1784217777,
+      "agent": "Chrome",
+      "event_uuid": "8624F216-DAF1-482C-B7EB-E966DC05E39D"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/2. China\u2019s Acquisition and Exploitation of American Voter Data/._WHTF Government Transparency - States Statement FINAL.pdf",
+    "target": "WHTF Government Transparency - States Statement FINAL.pdf",
+    "xattr_names": [
+      "com.apple.lastuseddate#PS",
+      "com.apple.quarantine"
+    ],
+    "size": 236,
+    "quarantine": {
+      "raw": "q/0083;6a59060b;Mattermost;",
+      "flags": "q/0083",
+      "download_time_utc": "2026-07-16T16:25:47Z",
+      "download_time_epoch": 1784219147,
+      "agent": "Mattermost",
+      "event_uuid": ""
+    },
+    "other_xattrs_hexpreview": {
+      "com.apple.lastuseddate#PS": "2b06596a0000000058c51c2700000000"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._.DS_Store",
+    "target": ".DS_Store",
+    "xattr_names": [],
+    "size": 120
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._0000001 - RELEASE MARKED.pdf",
+    "target": "0000001 - RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._196 - RELEASE MARKED.pdf",
+    "target": "196 - RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._233 - RELEASE MARKED.pdf",
+    "target": "233 - RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._265_0000001 - RELEASE MARKED.pdf",
+    "target": "265_0000001 - RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan 2021 Dont Want To Close Memo RELEASE MARKED.pdf",
+    "target": "FBIMichigan 2021 Dont Want To Close Memo RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan Fake Voter 3 Memo RELEASE MARKED.pdf",
+    "target": "FBIMichigan Fake Voter 3 Memo RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan Fake Voter Memo 1 RELEASE MARKED.pdf",
+    "target": "FBIMichigan Fake Voter Memo 1 RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan Fake Voter Memo 2 RELEASE MARKED.pdf",
+    "target": "FBIMichigan Fake Voter Memo 2 RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan Four Year Case Timeline RELEASE MARKED.pdf",
+    "target": "FBIMichigan Four Year Case Timeline RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan Fraudulent Registration Applications 91 of 107 RELEASE MARKED.pdf",
+    "target": "FBIMichigan Fraudulent Registration Applications 91 of 107 RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan Fraudulent Request Memo2 RELEASE MARKED.pdf",
+    "target": "FBIMichigan Fraudulent Request Memo2 RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan Orginal Muskego MSP Referral RELEASE MARKED.pdf",
+    "target": "FBIMichigan Orginal Muskego MSP Referral RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan PIN2023 Delay Memo - RELEASE MARKED.pdf",
+    "target": "FBIMichigan PIN2023 Delay Memo - RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan Voter Confirms She Did Not Register But Got Ballot RELEASE MARKED.pdf",
+    "target": "FBIMichigan Voter Confirms She Did Not Register But Got Ballot RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan Witness Interview Memo Gift Cards Suppress Trump RELEASE MARKED.pdf",
+    "target": "FBIMichigan Witness Interview Memo Gift Cards Suppress Trump RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan Witness Interview Memo Other States RELEASE MARKED.pdf",
+    "target": "FBIMichigan Witness Interview Memo Other States RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan Witness Interview Memo Paid By Registration Others Falsified RELEASE MARKED.pdf",
+    "target": "FBIMichigan Witness Interview Memo Paid By Registration Others Falsified RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan Witness Interview Memo Pot For Registrations RELEASE MARKED.pdf",
+    "target": "FBIMichigan Witness Interview Memo Pot For Registrations RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan Witness Interview Memo Probably Forged Memos RELEASE MARKED.pdf",
+    "target": "FBIMichigan Witness Interview Memo Probably Forged Memos RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan Witness Interview Widespread Fake Registrations RELEASE MARKED.pdf",
+    "target": "FBIMichigan Witness Interview Widespread Fake Registrations RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._FBIMichigan Worker Interview Sit In Car Fake Registrations RELEASE MARKED.pdf",
+    "target": "FBIMichigan Worker Interview Sit In Car Fake Registrations RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._GBI Strategies -RELEASE MARKED.pdf",
+    "target": "GBI Strategies -RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._PIN EDMI declination - RELEASE MARKED.pdf",
+    "target": "PIN EDMI declination - RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._PIN GBI Declination - RELEASE MARKED.pdf",
+    "target": "PIN GBI Declination - RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/3. Michigan Voter-Registration Investigation/._Voter Fraud Spreadsheet - RELEASE MARKED.pdf",
+    "target": "Voter Fraud Spreadsheet - RELEASE MARKED.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900b9;Chrome;218E33E9-65C5-409F-AB63-4543CD5337FA",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:05Z",
+      "download_time_epoch": 1784217785,
+      "agent": "Chrome",
+      "event_uuid": "218E33E9-65C5-409F-AB63-4543CD5337FA"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/4. Noncitizens on State Voter Rolls/._.DS_Store",
+    "target": ".DS_Store",
+    "xattr_names": [],
+    "size": 120
+  },
+  {
+    "sidecar": "__MACOSX/4. Noncitizens on State Voter Rolls/._Alien Voter Registration Summary.pdf_Redacted.pdf",
+    "target": "Alien Voter Registration Summary.pdf_Redacted.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900c1;Chrome;774B0A10-E952-4C24-AA35-34E99A1E8D8C",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:13Z",
+      "download_time_epoch": 1784217793,
+      "agent": "Chrome",
+      "event_uuid": "774B0A10-E952-4C24-AA35-34E99A1E8D8C"
+    }
+  },
+  {
+    "sidecar": "__MACOSX/4. Noncitizens on State Voter Rolls/._Voter Registration Database Threats - FINAL.pdf",
+    "target": "Voter Registration Database Threats - FINAL.pdf",
+    "xattr_names": [
+      "com.apple.quarantine"
+    ],
+    "size": 212,
+    "quarantine": {
+      "raw": "q/0081;6a5900c1;Chrome;774B0A10-E952-4C24-AA35-34E99A1E8D8C",
+      "flags": "q/0081",
+      "download_time_utc": "2026-07-16T16:03:13Z",
+      "download_time_epoch": 1784217793,
+      "agent": "Chrome",
+      "event_uuid": "774B0A10-E952-4C24-AA35-34E99A1E8D8C"
+    }
+  }
+]

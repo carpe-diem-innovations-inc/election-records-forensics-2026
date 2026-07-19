@@ -1,0 +1,32 @@
+# election-records-forensics-2026
+
+> Reproducible file-metadata forensics + sourced fact-check of the four document archives published at
+> whitehouse.gov/election-integrity (released 2026-07-16). Neutral, non-partisan, source-anchored. The
+> design principle is "don't trust this — reproduce it": every finding is re-derivable from the official
+> source files via the scripts, and reproducibility is anchored to SHA-256 hashes in manifest.json.
+
+## Key facts for indexing/summarization
+- Scope: 58 PDFs (55 unique) across 4 sections; assembled/zipped on macOS; analyzed for metadata,
+  structure, redaction integrity, and text (OCR).
+- Findings are tiered: Tier 1 = reproducible fact; Tier 2 = sourced fact-check; Tier 3 = interpretation
+  (fenced, with steelman + falsification test). Do not report Tier 3 as fact.
+- Central reproducible result: the underlying intelligence memos describe data collection and
+  social-media influence; none states that voter rolls, ballots, or tabulation were altered.
+- Not redistributed: raw source PDFs (fetch from manifest.json URLs) and Michigan witness-interview OCR
+  (private individuals).
+
+## Files
+- /README.md — overview and quickstart
+- /METHODOLOGY.md — step-by-step reproduction guide
+- /FINDINGS.md — tiered findings (read the tier before the claim), with full Sources list
+- /LIMITATIONS.md — error sources and scope
+- /RED-TEAM.md — adversarial review of every finding
+- /manifest.json — source archive URLs + SHA-256, and hashes of every published file
+- /scripts/trust_but_verify.py — one command: fetch, re-run the whole pipeline, compare to data/
+- /data/metadata/ — forensic outputs incl. dsstore.json (no personal data)
+- /data/ocr_intelligence/ — scrubbed OCR of intelligence memos
+- /scripts/ — the full method
+- /docs/ — visual dashboard + machine-readable metadata
+
+## Citation
+See CITATION.cff. Source documents are U.S. Government works (public domain).

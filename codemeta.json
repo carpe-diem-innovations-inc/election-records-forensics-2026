@@ -1,0 +1,45 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "election-records-forensics-2026",
+  "description": "Reproducible file-metadata forensics and sourced fact-check of the four document archives published at whitehouse.gov/election-integrity (released 2026-07-16). Anchored to SHA-256 hashes of the official source archives.",
+  "version": "1.0.0",
+  "dateCreated": "2026-07-17",
+  "datePublished": "2026-07-17",
+  "license": [
+    "https://spdx.org/licenses/MIT.html",
+    "https://spdx.org/licenses/CC-BY-4.0.html"
+  ],
+  "programmingLanguage": "Python",
+  "runtimePlatform": "Python 3.14",
+  "codeRepository": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026",
+  "keywords": [
+    "document forensics",
+    "metadata forensics",
+    "reproducible research",
+    "open data",
+    "fact-checking",
+    "PDF forensics",
+    "OCR"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0009-0003-9784-3396",
+      "name": "iridex-ai",
+      "email": "iridex@carpedieminnovationsinc.com",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Carpe Diem Innovations Inc."
+      }
+    }
+  ],
+  "softwareRequirements": [
+    "pikepdf",
+    "PyMuPDF",
+    "pdfminer.six",
+    "rapidocr-onnxruntime",
+    "onnxruntime",
+    "ds-store"
+  ]
+}

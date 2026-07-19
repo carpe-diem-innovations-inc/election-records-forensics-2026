@@ -1,0 +1,52 @@
+name: Finding
+description: Submit a new finding, with its evidentiary tier
+title: "[Finding] "
+labels: ["finding"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for adding to the pile. Read the tier definitions in FINDINGS.md first —
+        the tier is not decoration, it is the claim's load rating.
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Evidentiary tier
+      options:
+        - "Tier 1 — reproducible from the source files (code included below)"
+        - "Tier 2 — sourced fact-check against the public record (links below)"
+        - "Tier 3 — interpretation (steelman + falsification test required below)"
+    validations:
+      required: true
+  - type: textarea
+    id: finding
+    attributes:
+      label: The finding
+      description: State it in one paragraph, worded no stronger than the evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / how to reproduce
+      description: >
+        Tier 1: the exact commands or script that re-derive it (anchor to manifest.json hashes).
+        Tier 2: the source links. Tier 3: the reasoning.
+    validations:
+      required: true
+  - type: textarea
+    id: steelman
+    attributes:
+      label: Steelman + falsification test (required for Tier 3)
+      description: >
+        The strongest version of the competing reading, and what evidence would overturn
+        your interpretation.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: "No private-individual PII anywhere in this report"
+          required: true
+        - label: "No intent/guilt asserted about a living person as fact"
+          required: true

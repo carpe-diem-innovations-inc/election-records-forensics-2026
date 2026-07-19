@@ -1,0 +1,49 @@
+{
+  "note": "Independent Internet Archive captures of the official source URLs. For the four source archives, sha256_verified means the raw archived bytes (the id_ capture URL) were fetched and their SHA-256 matched the corresponding source_archives entry in manifest.json at verified_utc. The landing-page capture is a content snapshot (HTML; not hash-anchored). Re-verify any capture yourself: download the capture_url and compare against source_archives.",
+  "verified_utc": "2026-07-18T23:43:20Z",
+  "captures": [
+    {
+      "source_url": "https://www.whitehouse.gov/election-integrity/",
+      "archive": "web.archive.org",
+      "timestamp": "20260718082550",
+      "capture_url": "https://web.archive.org/web/20260718082550/https://www.whitehouse.gov/election-integrity/",
+      "content": "landing page snapshot"
+    },
+    {
+      "source_url": "https://www.whitehouse.gov/wp-content/uploads/2026/07/Vulnerabilities-in-Electronic-Voting-and-Ballot-Counting-Systems.zip",
+      "archive": "web.archive.org",
+      "timestamp": "20260717172609",
+      "capture_url": "https://web.archive.org/web/20260717172609id_/https://www.whitehouse.gov/wp-content/uploads/2026/07/Vulnerabilities-in-Electronic-Voting-and-Ballot-Counting-Systems.zip",
+      "sha256": "165d85c466cb841643f7c5219340905889ae84cc5235264c78571cae22e7a607",
+      "bytes": 10438315,
+      "sha256_verified": true
+    },
+    {
+      "source_url": "https://www.whitehouse.gov/wp-content/uploads/2026/07/Chinas-Acquisition-and-Exploitation-of-American-Voter-Data.zip",
+      "archive": "web.archive.org",
+      "timestamp": "20260718042031",
+      "capture_url": "https://web.archive.org/web/20260718042031id_/https://www.whitehouse.gov/wp-content/uploads/2026/07/Chinas-Acquisition-and-Exploitation-of-American-Voter-Data.zip",
+      "sha256": "a823364d94ad5b9bca5dc42c10e8c4e0e782c3e6f0331e40dd600aaa27d041ce",
+      "bytes": 39515761,
+      "sha256_verified": true
+    },
+    {
+      "source_url": "https://www.whitehouse.gov/wp-content/uploads/2026/07/Michigan-Voter-Registration-Investigation.zip",
+      "archive": "web.archive.org",
+      "timestamp": "20260717172614",
+      "capture_url": "https://web.archive.org/web/20260717172614id_/https://www.whitehouse.gov/wp-content/uploads/2026/07/Michigan-Voter-Registration-Investigation.zip",
+      "sha256": "b73c4dee770bf6270174d3a55419498c7911ae133e0b01740bfac24ca69c40f6",
+      "bytes": 23514930,
+      "sha256_verified": true
+    },
+    {
+      "source_url": "https://www.whitehouse.gov/wp-content/uploads/2026/07/Noncitizens-on-State-Voter-Rolls.zip",
+      "archive": "web.archive.org",
+      "timestamp": "20260717172615",
+      "capture_url": "https://web.archive.org/web/20260717172615id_/https://www.whitehouse.gov/wp-content/uploads/2026/07/Noncitizens-on-State-Voter-Rolls.zip",
+      "sha256": "3291004b5f1631fba0f306a78027858b94d8ced1f740663c2fb6eccd7b34158e",
+      "bytes": 565400,
+      "sha256_verified": true
+    }
+  ]
+}

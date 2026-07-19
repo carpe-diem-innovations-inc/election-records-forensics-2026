@@ -1,0 +1,7 @@
+# Ordinary text stays LF so checkouts are consistent.
+* text=auto eol=lf
+# Line endings are load-bearing: manifest.json records SHA-256 of the exact
+# bytes of every file under data/, so data/ must pass through git untouched —
+# no text detection, no EOL normalization, byte-for-byte. (Must come after
+# the * rule: the last matching line wins.)
+data/** -text

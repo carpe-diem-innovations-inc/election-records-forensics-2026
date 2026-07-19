@@ -1,0 +1,270 @@
+--- page 1 ---
+APPROVED FOR PUBLIC RELEASE BY COUNSEL TO THE PRESIDENT WARRINGTON on 1O July 2O26
+DeclassifiedbyD/CiARatcliffeon1July2026
+CENTRALINTELLIGENCEAGENCY
+CIANOTE
+(U)SummaryofSelectIntelligenceReportingfrom2004-
+2020onVenezuela'sElectronicVotingManipulation
+Capabilities
+29June2026
+--- page 2 ---
+CENTRAL INTELLIGENCE AGENCY
+29 June 2026
+CIA NOTE
+(U) Summary of Select Intelligence Reporting from 2004-2020 on
+Venezuela's Electronic Voting Manipulation Capabilities
+(u) surnmary
+. Intelligence. Community reporting from 2004-2020 documented persistent'concerns about
+Venezuelan government manipulatipn of 'electronic voting systems and the potential national' security
+implications for.Us election infrastructure. The iritelligence established thatVenezuelan government
+officials developed sustained interest·and likely 'some capability ir maniputating electronic voting
+systems, inicluding Snartmatic.technology; to influence electoral outcomes in Venezuela. The 2006
+Intelligence' Community.assessment that Smartmatic's ties to Venezuela posed a national security thireat
+was based on solid intelligence regarding'Venezuetan government intenit to'influence Us politics and'
+evidence of Venezuelan manipulatian of their own electoral systems: This assessmerit led to Us
+government action forcing Smartmatic to divest its. US operations in 2007.1
+reporting indicated
+that electronic voting 'systems contained. vulnerabilities: that could. theoretically be.exploited by
+sophisticated. actors: with insidier access..However, while'the intelligence validated'significant.concerns
+about foreign-linked voting technology vendors, it did not definitively :confirm that large-scale electronic
+fraud was'successfully executed in·specificiVenezuelan elections, with ClA's.baseline assessments'
+mainitaining that otherfactors: better.explained:electoral'outcomes. The reportinig-on advaniced
+technigues like
+provided concerning insight into alleged Venezuelan government
+capabilities and intent, but came' from limited sourcing.
+(U) Venezuela Government Interest in
+(U).Scope: Note: This. summary. focuses on.
+Election Manipulation
+what lntelligence Community reporting
+intelligence sources
+established regarding Venezuela's intent
+between 2004 and.2020.rep0rted that Venezuelan
+and capabilities to manipulate voting
+President Hugo Chavez anc.his' suctessor Nicolas
+machines,.both domesticaily and
+Maduro'demanstrated sustained interest.in
+potentially.in other countries. It is.not a
+manipulating.electoraloutcomes through
+comprehensive re-assessment of aill
+electronicvoting'systems. In April.2004,
+available inteligence on this topic, but
+intelligence reporting indicated chavez stated his
+rather a summary of key findings from
+objective was to prevent the reelection' of a' sitting
+select intelligence documents spanning
+Us president, suggesting intent.to influence-Us
+2004 to 2020.
+domestic politics:l This.finding was part.of the
+basis forthe Intelligence Community's.2006
+E d Thts product reflects a ClA perspective and was not codrdinated within he ntellgence Community, ft was' praduced
+under.the auspices of Deputy Director'cf ClA Icr:Analysis:
+--- page 3 ---
+CIA NOTE
+assessment that·Smartmatic's acquisition'of Us
+in Venezuela.had unspecified artificial intelligenice
+voting:systems company. Sequaia posed.a
+components installed, were designed to altervote
+"moderate threat" to us national'security.?
+tallies; couid detect when.they were being
+audited, and could provide prinited receipts
+Prior to Venezuela's 2012
+without registering. recording or transmitting
+presidential election, 
+reported
+those votes." While.ClA analysts judged these
+that chavez's intelligence'services, including .the
+capabilities were theoretically achievable, this
+General Directorate.of Military Counterintelligence.
+assessment focused on technical feasibility rather
+(DGGiM) and the Bolivarian.Intelligence Service
+than confirmation that such features were'actually
+(SEBIN), worked.with the National Eiectoral
+implemented.
+Council (CNE):and 'Smartmatic to develop.plans to
+manipulate electian results using preprogrammed
+W A.2013·CiA alternative analysis, produced
+voting machines.
+using the "Devil's Advocacy" methodology.
+reported·that'these.plans called for deploying
+outlined a plausibie scenario for how large'-scale
+altered machines to approximately 300 voting
+electronic manjpulation could have occurred in
+centers:in traditionaly pro-Chavez.areasto ensure.
+Venezueia's 2012 election.without.detection. This
+victory by approximately 1.5 million votes.3
+analysis noted.that Venezuela's electronic voting
+Following the election, which Chavez won by
+system was vulnerable to insider access, the
+:approximately i.6.million votes, sources reported
+centralized nature of the.CNE's contral aver voting
+that Chavez congratulated.his'team for.
+technology; and gaps in opposition monitoring
+successfully implementing:tthie maniputation pian.4
+capabilities. The report'assessed that'if.such
+manipulation occurred, "elections in Venezuela
+in September 2020,
+and other countries that.are clierits of the
+reported.that:Venezuela
+technology provider .could be in doubt."'However;
+pey
+ClA's baseline.assess ment'maintained·that.no
+developed detailed technical'plans to manipulate
+large-scale electronic.fraud occurred in 2012,
+the. December 2020 National.Assembly elections
+based on pre-election.polling data, absence of
+using what were
+irregular voting patterns, and the opposition's
+: .According to this reporting, the
+concession.a0
+technigue involved creating a seconid set ofvirtua!
+machines that would 'replicate legitimate voting
+Intelligence:reporting
+machine.results, then substitute manipulated.data
+consistently indicated that individuals with ties.to
+while making.votes appear to originate from
+Venezuelan intelligence.'services.had access to
+Jegitimate 'machines.
+election technology.and voting systems. In 2012,
+sou rces reported that Chavez assigned an.army
+communications specialist.to the.CNE to. provide
+real-time access.to election results..Reparting
+(U) Technical Capabilities and Vulnerabilities
+from 2012 also jindicated that: the CNE Inforrnation
+Technology Director, described as a confidant.of.
+ClA analysts assessed.in.2006
+the hiead of rnilitary intelligence with expertise in
+that certaincapabilities
+Voting'technology..was. responsible for designing
+regardiig·electronic voting manipulation were
+protocols for auditing voting saftware,12 These
+technically possible and operatiorially feasible.5?
+relationships:proyvided potential pathways for
+Specifically,
+thatvoting miachines
+manipulation of electronic voting systems.
+--- page 4 ---
+CIA NOTE
+Technigue
+ Intelligence'indicating Chavez's intent to
+influence Us domestic politics and public
+) The. September 2020
+opinion;
+initelligence reporting on
+pians provided
+the. most detailed description of a specific.
+Reporting that the Venezuelan
+technical approach to.election manipulation,
+government manipulated Veriezuelan national
+elections with Smartmatic's direct:involvement;
+technique was
+allegedly-designed to:13
+intelligence
+that Smartmatic'directors heldicredentials.from
+Replicate digital hash
+Venezuelan intelligenice services
+files sent to the centralvote counting
+ database;
+ Open source reporting of corrupt
+relationships betweenr Smartmatic and
+Mimic real voting
+Venezuelan government officials; .and
+machines that favored the ruling party:
+Smartmatic's and Sequoia's reported
+Qverwrite hash files.of
+contracts in approximately 4oo us counties at
+voting machines that favored'the opposition;
+the time.16
+and
+The assessment concluded that
+Make alteredvotes
+Srnartmatic's susceptibility to Venezuelan
+appear to :originate fron legitimate: voting
+machines.14
+potentiai instrument for Venezuelan: officials
+seeking'to.undermine confidence in, or
+manipulate the:electoral process in, the United
+this.techniquewould, in:theory, allow'the
+States.17 This finding led to pressure from the
+Venezuelan government to monitor and adjust
+Comimittee on Fo'reign Investment in the United
+results in real-time durinig and afterthe:election.
+:States (crlUs) that resulted in Smartmatic
+The reporting indicated that vitual'machine
+divesting.its ownership.of.Sequoia In 2007.
+technology would be emiployed:to accormpjish this
+manipulation while evading detectionthrough
+In March.2018, Smartmatic
+standard audit procedures.is
+ceased operations in Venezuela.after publicly
+accusingthe Maduro regime of inflating voter
+(u) Ic Assessments' and Concerns
+turnout by over one million votes in'the August.
+:2017z National Constituent Assembly election
+The 2006 National Security Threat
+figures'that diverged from: datarrecorced'by
+Assessment.produced by the Nationalilnteligence
+Srmartmiatic's voting machines. This represented.a
+Counicil-evaluated Smartmatic's acquisition of
+break.between.Smartmatic.andthe.Vehezuelan
+Sequota-Voting Systems as a I'moderate overall.
+government'after years.of the:company providing
+threat to'Us national security interests. " This
+electoraltechnology to:Venezuela.18.
+assessment was.based on'severalfactors:
+.3.
+--- page 5 ---
+CIA NOTE
+(U) Limitations'and Analytic Caveats
+Fourth, the September.2020
+reporting.on
+The-inteligence reporting.contains
+important limitations:that must be corisidered
+when assessing.what it establishes:
+and:judged the
+First, the 2006 Intelligence Community
+regime'did not need to resort'to. gross fraud to win
+assessment concluded that neither Smartmatic
+the. December 2020 National Assembly:elections.
+nor the Venezuelan Government had the
+given that virtuallythe entire oppasition.
+capability-that:is, the level .of-control or:access
+boycotted and'the.regime nad already.co-opted
+required-to'manipulate the.outcome of an
+opposition party leadership.22
+election outside ofVenezuela in'a predictable
+fashion. The.Venezuelan.Governiment'sability to
+manipulate the resuits ofvoting in Venezuela.
+rested in part.on its.ability to :control every stage
+of the.electronic voting process, from:initial
+acquisition'of.the.machines to.pre- and post-
+voting'machine security,.to programming,to
+storage.of papervoting receipts,to.contral.of the
+audit'process. NeithertheVenezielan. .
+Governiment:nor: Smartmatic would have: such a
+complete:spectrum of access during an electoral
+process.outside Venezuela,is ?
+Second,. CIA's baseline
+assessment regarding Venezuela's.2012: election
+maintained that largerscale electronic.fraud'did
+notoccur.despite!
+:repoiting.of.
+manipulatjon plans. This assessmentwas
+supported by pre-election polling showing:chavez
+ahead by approximately Io percentage points, a
+24% increase in. government spencing before the
+election, the.opposition's concession of defeat,
+and.CiA quantitative analysis showing, no irregular
+voting,patterns indicative. of.systernatic.
+manipulation.20
+Third, the 2013 Devil's
+Advocacy Report that outlined'a plausible fraud
+scenario was explicitly.an alternative analysis
+exercise rather than a.definitive finding. The
+report acknowledged "conflictingi
+reporting" and "limited insight into'key elements
+of the electranic.voting system'21
+.4
+--- page 6 ---
+CIA NOTE
+..*...
+.... :.........

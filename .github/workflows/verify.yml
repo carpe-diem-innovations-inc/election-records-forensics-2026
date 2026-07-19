@@ -1,0 +1,61 @@
+name: verify
+
+# Continuous reproducibility: re-derive the entire published dataset from the
+# official source archives and fail if anything stops matching. The weekly run
+# doubles as a canary — if the files at whitehouse.gov are silently modified or
+# removed, the SHA-256 anchor check fails publicly.
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * 1"   # Mondays 06:17 UTC
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+
+      - name: Install pinned dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+
+      - name: Unit tests
+        run: pytest tests/ -q
+
+      - name: Cache source archives (keyed to their SHA-256 anchors)
+        uses: actions/cache@v4
+        with:
+          path: corpus
+          key: ei-corpus-${{ hashFiles('manifest.json') }}
+
+      - name: Trust, but verify (full pipeline incl. OCR)
+        env:
+          EI_CORPUS: ${{ github.workspace }}/corpus
+          TMPDIR: ${{ runner.temp }}/ei
+        run: |
+          mkdir -p "$TMPDIR"
+          python scripts/trust_but_verify.py --keep
+
+      # On failure, upload the re-derived outputs (the thing that actually
+      # diverged), not the hash-verified public source zips.
+      - name: Upload reproduction outputs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verify-diagnostics
+          path: |
+            ${{ runner.temp }}/ei/ei_verify_*/data/**
+            ${{ runner.temp }}/ei/ei_verify_*/data_public/**
+          retention-days: 7
+          if-no-files-found: ignore

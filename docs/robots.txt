@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carpe-diem-innovations-inc.github.io/election-records-forensics-2026/sitemap.xml
