@@ -1,0 +1,69 @@
+# Dependency policy, in the repository rather than in a settings page.
+#
+# Dependabot was already running against this repo, configured through the GitHub UI. That
+# meant the policy governing a public forensics repository was not version-controlled and a
+# reader could not see it. This file is that policy, reviewable like everything else here.
+#
+# !! THE IMPORTANT PART IS WHAT IS *NOT* UPDATED.
+#
+# The runtime pins in requirements.txt are not hygiene, they are the reproduction contract.
+# pikepdf, PyMuPDF, pdfminer.six, rapidocr-onnxruntime, onnxruntime, numpy, opencv-python,
+# Pillow and ds-store are the exact versions that produced the published data/ tree, and
+# manifest.json records the SHA-256 of every output they generated. Bumping any of them can
+# change a metadata field or an OCR character, which would break byte-identical reproduction
+# of results this project asks the world to check.
+#
+# So a runtime bump here is a REPUBLICATION decision - re-run the pipeline, review the diff
+# against data/, regenerate the manifest, re-timestamp it - not a maintenance chore. Handing
+# that to an automated pull request would be handing away the thing the repo exists to prove.
+# Those packages are therefore ignored, deliberately, and are reviewed by hand when there is a
+# reason to move.
+#
+# Development and CI dependencies are a different matter entirely: they cannot touch the
+# published outputs, so they are updated automatically. pytest 8.4.2 -> 9.0.3 (PR #1,
+# GHSA-6w46-j5rx-g56g) is exactly the case this is for.
+
+version: 2
+
+updates:
+  # ---- Python ----------------------------------------------------------------------------
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "build(deps)"
+      prefix-development: "build(deps-dev)"
+      include: "scope"
+    labels:
+      - "dependencies"
+    ignore:
+      # The reproduction contract - see the header. Reviewed by hand, never auto-bumped.
+      - dependency-name: "pikepdf"
+      - dependency-name: "PyMuPDF"
+      - dependency-name: "pdfminer.six"
+      - dependency-name: "rapidocr-onnxruntime"
+      - dependency-name: "onnxruntime"
+      - dependency-name: "numpy"
+      - dependency-name: "opencv-python"
+      - dependency-name: "Pillow"
+      - dependency-name: "ds-store"
+
+  # ---- GitHub Actions --------------------------------------------------------------------
+  # The workflow is part of the verification story: it is the clean-runner evidence a reader
+  # relies on. A stale, unmaintained action there is a real risk, and no action version can
+  # alter the published data - so these update freely.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "build(ci)"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "github-actions"
