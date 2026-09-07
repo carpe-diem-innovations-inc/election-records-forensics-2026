@@ -1,2 +1,2 @@
 # Development / CI extras (not needed to reproduce the analysis)
-pytest==8.4.2
+pytest==9.0.3
