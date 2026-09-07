@@ -1,0 +1,56 @@
+{
+  "schema": "gatekeeper/0.1",
+  "repo": "carpe-diem-innovations-inc/election-records-forensics-2026",
+  "visibility": "PUBLIC",
+  "head": "5096c604718b6409c045b3327dcfabe014de7d53",
+  "content_id": "2b5b61140e480876558008d8f95893232741177f5cac3a3f9db0cf4c0e809148",
+  "branch": "main",
+  "verified_at": "2026-09-07T15:39:57.7912924-04:00",
+  "box": "CRADLE",
+  "stages": {
+    "works": {
+      "status": "deferred-to-ci",
+      "reason": "works_via=ci; the elsewhere stage carries the proof"
+    },
+    "safe": {
+      "status": "pass",
+      "checks": [
+        {
+          "name": "no_secrets",
+          "status": "pass",
+          "hits": []
+        },
+        {
+          "name": "no_estate_paths",
+          "status": "pass",
+          "hits": []
+        },
+        {
+          "detail": "LICENSE present",
+          "name": "licence_declared",
+          "status": "pass"
+        },
+        {
+          "dirty_files": 0,
+          "name": "tree_clean",
+          "status": "pass"
+        }
+      ]
+    },
+    "elsewhere": {
+      "status": "pass",
+      "runs": [
+        {
+          "conclusion": "success",
+          "url": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/actions/runs/34152642968",
+          "workflow": "verify"
+        },
+        {
+          "conclusion": "success",
+          "url": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/actions/runs/34152642027",
+          "workflow": "pages-build-deployment"
+        }
+      ]
+    }
+  }
+}

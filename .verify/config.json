@@ -1,0 +1,5 @@
+{
+  "_comment": "Verification scope for election-records-forensics-2026. This repo already implements all three stages and is the precedent the estate's verification doctrine was generalised from: pytest tests/ plus scripts/trust_but_verify.py regenerate every committed output from source and diff it; scripts/claims_lint.py asserts each load-bearing number against the data; .github/workflows/verify.yml runs the full pipeline including OCR on a clean runner. See B:/runners/verify.ps1 and canon disclosure_and_verification.md 2.3.",
+  "works_via": "ci",
+  "works_via_reason": "The pipeline pins pikepdf, PyMuPDF and pdfminer.six and reproduces an OCR stage. Running it here means a large install duplicating what CI already runs in full on every push, for no added assurance. The safe stage still runs locally and still gates the push, so a leak is caught before publication. CI remains the works proof and main cannot be reached without it green."
+}
