@@ -2,17 +2,23 @@
   "schema": "gatekeeper/0.1",
   "repo": "carpe-diem-innovations-inc/election-records-forensics-2026",
   "visibility": "PUBLIC",
-  "head": "5096c604718b6409c045b3327dcfabe014de7d53",
-  "content_id": "2b5b61140e480876558008d8f95893232741177f5cac3a3f9db0cf4c0e809148",
-  "branch": "main",
-  "verified_at": "2026-09-07T15:39:57.7912924-04:00",
-  "box": "CRADLE",
+  "visibility_assumed": false,
+  "head": "0682c20a0ba1abff548dbd63ebb94e6e1a074846",
+  "content_id": "5f1826768af06a21f4d466bd61c75a9c19b6664761f64e3be2fd4cf75e010366",
+  "branch": "verify/cradle",
+  "verified_at": "2026-09-07T18:45:52.9485537-04:00",
+  "ran_on": "CRADLE",
   "stages": {
     "works": {
-      "status": "deferred-to-ci",
-      "reason": "works_via=ci; the elsewhere stage carries the proof"
+      "cmd": "python -m pytest tests/ -q && python scripts/trust_but_verify.py --fast",
+      "exit": 0,
+      "status": "pass",
+      "evidence": "  PASS  data/metadata/duplicates.json             byte-identical\n  PASS  data/metadata/macos_xattrs.json           byte-identical\n  PASS  data/metadata/dsstore.json                byte-identical\n  PASS  data/metadata/pdf_metadata.json           byte-identical\n  PASS  data/metadata/redaction_leaks.json        byte-identical\n  PASS  data/metadata/revision_recovery.json      byte-identical\n  PASS  data/metadata/consolidated_findings.json  byte-identical\n  PASS  manifest.json published_files (26)        all hashes + sizes match\n  PASS  private-citizen OCR excluded              none present\n================================================================================\n\nFAST (OCR skipped): everything reproduces. Nullius in verba — and now you didn't have to.",
+      "proved_on": "CRADLE",
+      "timed_out": false
     },
     "safe": {
+      "proved_on": "CRADLE",
       "status": "pass",
       "checks": [
         {
@@ -26,31 +32,27 @@
           "hits": []
         },
         {
-          "detail": "LICENSE present",
           "name": "licence_declared",
-          "status": "pass"
+          "status": "pass",
+          "detail": "LICENSE present"
         },
         {
-          "dirty_files": 0,
           "name": "tree_clean",
-          "status": "pass"
+          "status": "pass",
+          "dirty_files": 0
+        },
+        {
+          "name": "verification_documented",
+          "status": "pass",
+          "detail": "README carries a verification section and the CI badge"
         }
       ]
     },
     "elsewhere": {
-      "status": "pass",
-      "runs": [
-        {
-          "conclusion": "success",
-          "url": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/actions/runs/34152642968",
-          "workflow": "verify"
-        },
-        {
-          "conclusion": "success",
-          "url": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/actions/runs/34152642027",
-          "workflow": "pages-build-deployment"
-        }
-      ]
+      "proved_on": null,
+      "status": "pending",
+      "sha": "0682c20a0ba1abff548dbd63ebb94e6e1a074846",
+      "reason": "no CI run recorded for 0682c20a0ba1abff548dbd63ebb94e6e1a074846"
     }
   }
 }
