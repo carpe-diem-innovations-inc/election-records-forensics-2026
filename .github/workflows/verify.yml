@@ -34,7 +34,7 @@ jobs:
         run: pytest tests/ -q
 
       - name: Cache source archives (keyed to their SHA-256 anchors)
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: corpus
           key: ei-corpus-${{ hashFiles('manifest.json') }}
