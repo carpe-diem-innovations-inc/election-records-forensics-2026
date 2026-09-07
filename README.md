@@ -61,6 +61,44 @@ a PASS/FAIL table. `--fast` skips OCR (~2 min instead of ~15). A weekly CI run d
 public, so this repo also acts as a **canary**: if the official source files are ever modified or removed,
 the badge above goes red.
 
+### Where it has been reproduced
+
+Reproduction is only worth as much as the number of places it has happened, so here is the
+record rather than a claim:
+
+| where | what ran | result |
+|---|---|---|
+| **GitHub Actions, `ubuntu-latest`** | full pipeline including OCR, on every push | metadata byte-identical; OCR compared at the ≥ 99.5% similarity threshold described in [LIMITATIONS](LIMITATIONS.md) |
+| **A Windows workstation, 2026-09-07** | full pipeline including OCR, plus the 12 unit tests | 29/29 checks pass — all 8 metadata outputs byte-identical, **all 16 OCR files byte-identical**, all 26 published-file hashes and sizes matching |
+
+‼ **Read that second row carefully, because it is weaker evidence than it looks.**
+[LIMITATIONS](LIMITATIONS.md) records that an *independent* machine reproduced **14 of 16** OCR
+files byte-identically, with two showing whitespace differences and a single character flip.
+Getting 16 of 16 is therefore consistent with this being the machine the published data was
+produced on — so it is a **drift check**, confirming the pipeline still reproduces its own
+output today with the pinned dependencies, and **not** evidence of cross-machine determinism.
+
+**The independent-platform evidence is the CI row**, on hardware and an operating system this
+project does not control. Neither row replaces the thing that would be worth most: someone
+else running it. See below.
+
+### The timestamp, checked against a node rather than a service
+
+`manifest.json.ots` is an [OpenTimestamps](https://opentimestamps.org) proof anchoring the
+manifest into the Bitcoin blockchain. On 2026-09-07 it was verified against a **self-hosted
+Bitcoin Core node** rather than a third-party calendar or block explorer:
+
+```
+Got digest 333df3c8dc40c01e1dace57e2b7d76be9a0c8da21f82ef6d583af34c1e045047
+Attestation block hash: 000000000000000000022958df14a8b588a2fb9745ce4e11e1d376ff7c55214d
+Success! Bitcoin block 958631 attests existence as of 2026-07-18
+```
+
+So `manifest.json` — and through it the SHA-256 of every published file — provably existed in
+its current form before that block was mined. **You do not have to take our word for the
+timestamp, and you do not have to trust a calendar server either:** `ots verify manifest.json.ots`
+against your own node reaches the same block independently.
+
 ## Independent verification invited
 
 **Try to break these findings.** The strongest check on this work is adversarial technical review by
