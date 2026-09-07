@@ -66,21 +66,38 @@ the badge above goes red.
 Reproduction is only worth as much as the number of places it has happened, so here is the
 record rather than a claim:
 
-| where | what ran | result |
-|---|---|---|
-| **GitHub Actions, `ubuntu-latest`** | full pipeline including OCR, on every push | metadata byte-identical; OCR compared at the ≥ 99.5% similarity threshold described in [LIMITATIONS](LIMITATIONS.md) |
-| **A Windows workstation, 2026-09-07** | full pipeline including OCR, plus the 12 unit tests | 29/29 checks pass — all 8 metadata outputs byte-identical, **all 16 OCR files byte-identical**, all 26 published-file hashes and sizes matching |
+| platform | CPU | what ran | result |
+|---|---|---|---|
+| GitHub Actions, `ubuntu-latest` | runner-assigned | full pipeline incl. OCR, every push | metadata byte-identical; OCR at the ≥ 99.5% similarity threshold |
+| `windows-26100.9168` | Zen 5, 2024 | full pipeline incl. OCR + 12 unit tests | 29/29 — **16 of 16** OCR files byte-identical |
+| `windows-19044.7663` | Ivy Bridge, 2012 | full pipeline incl. OCR + 12 unit tests, from a **fresh clone of this repo** | 29/29 — **14 of 16** byte-identical, 2 on similarity (99.97% and 100.00%) |
 
-‼ **Read that second row carefully, because it is weaker evidence than it looks.**
-[LIMITATIONS](LIMITATIONS.md) records that an *independent* machine reproduced **14 of 16** OCR
-files byte-identically, with two showing whitespace differences and a single character flip.
-Getting 16 of 16 is therefore consistent with this being the machine the published data was
-produced on — so it is a **drift check**, confirming the pipeline still reproduces its own
-output today with the pinned dependencies, and **not** evidence of cross-machine determinism.
+**The two rows differ, and the difference is the interesting part.**
 
-**The independent-platform evidence is the CI row**, on hardware and an operating system this
-project does not control. Neither row replaces the thing that would be worth most: someone
-else running it. See below.
+The 2024 machine reproduced all 16 OCR files byte-for-byte. The 2012 machine reproduced 14
+byte-for-byte and two only after whitespace normalisation —
+`EMAIL_ICA.CommentsReMinorityView…` at 99.97% and
+`NICM_ChinaStepsToInfluenceElection…` at 100.00% character similarity.
+
+That is **exactly** what [LIMITATIONS](LIMITATIONS.md) predicts: ONNX inference is not
+bit-for-bit across CPUs, and an independent machine was recorded as reproducing 14 of 16
+byte-identically with two whitespace-level differences. An independent run twelve years of
+microarchitecture away landed on the same figure. **So the caveat in LIMITATIONS is not a
+hedge — it is a measured, reproduced property**, and the similarity threshold exists because
+it has to.
+
+It also means the 16-of-16 row is the **weaker** of the two as evidence: getting a perfect
+byte match is consistent with that being the machine the published data was produced on, so it
+demonstrates the pipeline has not drifted rather than that it is machine-independent.
+
+‼ **One limit on both Windows rows, stated because a reader would otherwise assume more than
+is there: both are LTSC installations** — the same stripped-down Windows servicing lineage,
+neither a stock consumer image. Two Windows results here are less independent than "two
+Windows machines" sounds. They differ in OS generation and CPU, not in OS lineage.
+
+**The genuinely uncontrolled platform is the CI row**, on hardware and an operating system this
+project does not own. And none of these rows replaces the thing worth most: someone with no
+stake in the conclusions running it. See below.
 
 ### The timestamp, checked against a node rather than a service
 
