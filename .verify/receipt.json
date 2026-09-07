@@ -3,21 +3,23 @@
   "repo": "carpe-diem-innovations-inc/election-records-forensics-2026",
   "visibility": "PUBLIC",
   "visibility_assumed": false,
-  "head": "07c265ac17e436efd065e35ce56c330668ea4076",
-  "content_id": "80882b9f889389cf1cb252ae0b331e361fd32a6a54ea78f36998b46e21453ca6",
-  "branch": "main",
-  "verified_at": "2026-09-07T19:29:49.6021485-04:00",
+  "head": "72964f8c5697e5f2c0284321254763ad93d83719",
+  "content_id": "73180c0ab91deb73908a7b2460c2bca9d6eb59c351e7b6875bb08503a260fbb1",
+  "branch": "verify/second-platform",
+  "verified_at": "2026-09-07T19:30:59.1561353-04:00",
   "ran_on": "windows-26100.9168",
   "stages": {
     "works": {
-      "status": "pass",
-      "exit": 0,
       "cmd": "python -m pytest tests/ -q && python scripts/trust_but_verify.py --fast",
-      "evidence": "  PASS  data/metadata/duplicates.json             byte-identical\n  PASS  data/metadata/macos_xattrs.json           byte-identical\n  PASS  data/metadata/dsstore.json                byte-identical\n  PASS  data/metadata/pdf_metadata.json           byte-identical\n  PASS  data/metadata/redaction_leaks.json        byte-identical\n  PASS  data/metadata/revision_recovery.json      byte-identical\n  PASS  data/metadata/consolidated_findings.json  byte-identical\n  PASS  manifest.json published_files (26)        all hashes + sizes match\n  PASS  private-citizen OCR excluded              none present\n================================================================================\n\nFAST (OCR skipped): everything reproduces. Nullius in verba — and now you didn't have to.",
+      "status": "pass",
       "proved_on": "windows-26100.9168",
+      "evidence": "  PASS  data/metadata/duplicates.json             byte-identical\n  PASS  data/metadata/macos_xattrs.json           byte-identical\n  PASS  data/metadata/dsstore.json                byte-identical\n  PASS  data/metadata/pdf_metadata.json           byte-identical\n  PASS  data/metadata/redaction_leaks.json        byte-identical\n  PASS  data/metadata/revision_recovery.json      byte-identical\n  PASS  data/metadata/consolidated_findings.json  byte-identical\n  PASS  manifest.json published_files (26)        all hashes + sizes match\n  PASS  private-citizen OCR excluded              none present\n================================================================================\n\nFAST (OCR skipped): everything reproduces. Nullius in verba — and now you didn't have to.",
+      "exit": 0,
       "timed_out": false
     },
     "safe": {
+      "proved_on": "windows-26100.9168",
+      "status": "pass",
       "checks": [
         {
           "status": "pass",
@@ -49,35 +51,13 @@
           "status": "pass",
           "name": "verification_documented"
         }
-      ],
-      "status": "pass",
-      "proved_on": "windows-26100.9168"
+      ]
     },
     "elsewhere": {
-      "runs": [
-        {
-          "url": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/actions/runs/34169865829",
-          "workflow": "Dependency Graph",
-          "conclusion": "success"
-        },
-        {
-          "url": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/actions/runs/34169864220",
-          "workflow": "CodeQL",
-          "conclusion": "success"
-        },
-        {
-          "url": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/actions/runs/34169864322",
-          "workflow": "verify",
-          "conclusion": "success"
-        },
-        {
-          "url": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/actions/runs/34169863882",
-          "workflow": "pages-build-deployment",
-          "conclusion": "success"
-        }
-      ],
-      "status": "pass",
-      "proved_on": "github-actions"
+      "proved_on": null,
+      "status": "pending",
+      "sha": "72964f8c5697e5f2c0284321254763ad93d83719",
+      "reason": "no CI run recorded for 72964f8c5697e5f2c0284321254763ad93d83719"
     }
   }
 }
