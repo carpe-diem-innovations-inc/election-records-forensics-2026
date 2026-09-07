@@ -3,61 +3,66 @@
   "repo": "carpe-diem-innovations-inc/election-records-forensics-2026",
   "visibility": "PUBLIC",
   "visibility_assumed": false,
-  "head": "72964f8c5697e5f2c0284321254763ad93d83719",
+  "head": "7a2b1bfbc7097903599070b23819b33bf41fc045",
   "content_id": "73180c0ab91deb73908a7b2460c2bca9d6eb59c351e7b6875bb08503a260fbb1",
   "branch": "verify/second-platform",
-  "verified_at": "2026-09-07T19:30:59.1561353-04:00",
+  "verified_at": "2026-09-07T19:35:39.4467153-04:00",
   "ran_on": "windows-26100.9168",
   "stages": {
     "works": {
       "cmd": "python -m pytest tests/ -q && python scripts/trust_but_verify.py --fast",
-      "status": "pass",
-      "proved_on": "windows-26100.9168",
-      "evidence": "  PASS  data/metadata/duplicates.json             byte-identical\n  PASS  data/metadata/macos_xattrs.json           byte-identical\n  PASS  data/metadata/dsstore.json                byte-identical\n  PASS  data/metadata/pdf_metadata.json           byte-identical\n  PASS  data/metadata/redaction_leaks.json        byte-identical\n  PASS  data/metadata/revision_recovery.json      byte-identical\n  PASS  data/metadata/consolidated_findings.json  byte-identical\n  PASS  manifest.json published_files (26)        all hashes + sizes match\n  PASS  private-citizen OCR excluded              none present\n================================================================================\n\nFAST (OCR skipped): everything reproduces. Nullius in verba — and now you didn't have to.",
+      "timed_out": false,
       "exit": 0,
-      "timed_out": false
+      "status": "pass",
+      "evidence": "  PASS  data/metadata/duplicates.json             byte-identical\n  PASS  data/metadata/macos_xattrs.json           byte-identical\n  PASS  data/metadata/dsstore.json                byte-identical\n  PASS  data/metadata/pdf_metadata.json           byte-identical\n  PASS  data/metadata/redaction_leaks.json        byte-identical\n  PASS  data/metadata/revision_recovery.json      byte-identical\n  PASS  data/metadata/consolidated_findings.json  byte-identical\n  PASS  manifest.json published_files (26)        all hashes + sizes match\n  PASS  private-citizen OCR excluded              none present\n================================================================================\n\nFAST (OCR skipped): everything reproduces. Nullius in verba — and now you didn't have to.",
+      "proved_on": "windows-26100.9168"
     },
     "safe": {
       "proved_on": "windows-26100.9168",
       "status": "pass",
       "checks": [
         {
-          "status": "pass",
+          "hits": [],
           "name": "no_secrets",
-          "hits": []
+          "status": "pass"
         },
         {
-          "status": "pass",
+          "hits": [],
           "name": "no_estate_paths",
-          "hits": []
+          "status": "pass"
         },
         {
-          "status": "pass",
+          "hits": [],
           "name": "no_machine_names",
-          "hits": []
+          "status": "pass"
         },
         {
           "detail": "LICENSE present",
-          "status": "pass",
-          "name": "licence_declared"
+          "name": "licence_declared",
+          "status": "pass"
         },
         {
-          "dirty_files": 0,
+          "name": "tree_clean",
           "status": "pass",
-          "name": "tree_clean"
+          "dirty_files": 0
         },
         {
           "detail": "README carries a verification section and the CI badge",
-          "status": "pass",
-          "name": "verification_documented"
+          "name": "verification_documented",
+          "status": "pass"
         }
       ]
     },
     "elsewhere": {
-      "proved_on": null,
-      "status": "pending",
-      "sha": "72964f8c5697e5f2c0284321254763ad93d83719",
-      "reason": "no CI run recorded for 72964f8c5697e5f2c0284321254763ad93d83719"
+      "proved_on": "github-actions",
+      "runs": [
+        {
+          "workflow": "verify",
+          "url": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/actions/runs/34170309578",
+          "conclusion": "success"
+        }
+      ],
+      "status": "pass"
     }
   }
 }
