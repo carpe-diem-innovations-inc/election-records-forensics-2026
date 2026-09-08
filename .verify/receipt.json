@@ -3,66 +3,61 @@
   "repo": "carpe-diem-innovations-inc/election-records-forensics-2026",
   "visibility": "PUBLIC",
   "visibility_assumed": false,
-  "head": "fc20152c947fd2b06ddab27f9da7d496da0ac6bf",
-  "content_id": "d61bbef2691c73db7fcbfb061fe0a7147a4050b94d3b7634ed839a56ed9aa393",
-  "branch": "ci/dependabot-policy",
-  "verified_at": "2026-09-07T19:43:26.6374060-04:00",
+  "head": "6ca8efa1d2120b58e807537d96d6ca7a0c96e6b9",
+  "content_id": "980182de662306f74ae48f0abfe7d4cb8b5572da0abb99ea325ab173e5fc8fad",
+  "branch": "verify/third-platform",
+  "verified_at": "2026-09-07T20:11:22.3050053-04:00",
   "ran_on": "windows-26100.9168",
   "stages": {
     "works": {
       "cmd": "python -m pytest tests/ -q && python scripts/trust_but_verify.py --fast",
-      "status": "pass",
-      "proved_on": "windows-26100.9168",
-      "timed_out": false,
       "exit": 0,
-      "evidence": "  PASS  data/metadata/duplicates.json             byte-identical\n  PASS  data/metadata/macos_xattrs.json           byte-identical\n  PASS  data/metadata/dsstore.json                byte-identical\n  PASS  data/metadata/pdf_metadata.json           byte-identical\n  PASS  data/metadata/redaction_leaks.json        byte-identical\n  PASS  data/metadata/revision_recovery.json      byte-identical\n  PASS  data/metadata/consolidated_findings.json  byte-identical\n  PASS  manifest.json published_files (26)        all hashes + sizes match\n  PASS  private-citizen OCR excluded              none present\n================================================================================\n\nFAST (OCR skipped): everything reproduces. Nullius in verba — and now you didn't have to."
+      "proved_on": "windows-26100.9168",
+      "evidence": "  PASS  data/metadata/duplicates.json             byte-identical\n  PASS  data/metadata/macos_xattrs.json           byte-identical\n  PASS  data/metadata/dsstore.json                byte-identical\n  PASS  data/metadata/pdf_metadata.json           byte-identical\n  PASS  data/metadata/redaction_leaks.json        byte-identical\n  PASS  data/metadata/revision_recovery.json      byte-identical\n  PASS  data/metadata/consolidated_findings.json  byte-identical\n  PASS  manifest.json published_files (26)        all hashes + sizes match\n  PASS  private-citizen OCR excluded              none present\n================================================================================\n\nFAST (OCR skipped): everything reproduces. Nullius in verba — and now you didn't have to.",
+      "status": "pass",
+      "timed_out": false
     },
     "safe": {
       "checks": [
         {
           "name": "no_secrets",
-          "status": "pass",
-          "hits": []
+          "hits": [],
+          "status": "pass"
         },
         {
           "name": "no_estate_paths",
-          "status": "pass",
-          "hits": []
+          "hits": [],
+          "status": "pass"
         },
         {
           "name": "no_machine_names",
-          "status": "pass",
-          "hits": []
+          "hits": [],
+          "status": "pass"
         },
         {
-          "detail": "LICENSE present",
           "name": "licence_declared",
+          "detail": "LICENSE present",
           "status": "pass"
         },
         {
-          "dirty_files": 0,
           "name": "tree_clean",
+          "dirty_files": 0,
           "status": "pass"
         },
         {
-          "detail": "README carries a verification section and the CI badge",
           "name": "verification_documented",
+          "detail": "README carries a verification section and the CI badge",
           "status": "pass"
         }
       ],
-      "status": "pass",
-      "proved_on": "windows-26100.9168"
+      "proved_on": "windows-26100.9168",
+      "status": "pass"
     },
     "elsewhere": {
-      "runs": [
-        {
-          "conclusion": "success",
-          "workflow": "verify",
-          "url": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/actions/runs/34170688889"
-        }
-      ],
-      "status": "pass",
-      "proved_on": "github-actions"
+      "reason": "no CI run recorded for 6ca8efa1d2120b58e807537d96d6ca7a0c96e6b9",
+      "sha": "6ca8efa1d2120b58e807537d96d6ca7a0c96e6b9",
+      "proved_on": null,
+      "status": "pending"
     }
   }
 }
