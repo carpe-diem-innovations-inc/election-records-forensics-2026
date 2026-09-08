@@ -3,52 +3,52 @@
   "repo": "carpe-diem-innovations-inc/election-records-forensics-2026",
   "visibility": "PUBLIC",
   "visibility_assumed": false,
-  "head": "6322920478c4bc73369b1f7d21f86bf99a2508b4",
-  "content_id": "233010e71b6ef054df10a04f812676c562f7682f29e5c57b1a0d7aa1fd9a71c4",
-  "branch": "verify/cpu-not-os",
-  "verified_at": "2026-09-07T20:26:53.9173347-04:00",
+  "head": "b9c70e4e5de05c72dbff2e596d90a4cb51976aaf",
+  "content_id": "7ccc12b32e7290a479561865b736c6e3031861c8f557ee580312db35486b1c2f",
+  "branch": "main",
+  "verified_at": "2026-09-07T20:55:51.8334163-04:00",
   "ran_on": "windows-26100.9168",
   "stages": {
     "works": {
       "evidence": "  PASS  data/metadata/duplicates.json             byte-identical\n  PASS  data/metadata/macos_xattrs.json           byte-identical\n  PASS  data/metadata/dsstore.json                byte-identical\n  PASS  data/metadata/pdf_metadata.json           byte-identical\n  PASS  data/metadata/redaction_leaks.json        byte-identical\n  PASS  data/metadata/revision_recovery.json      byte-identical\n  PASS  data/metadata/consolidated_findings.json  byte-identical\n  PASS  manifest.json published_files (26)        all hashes + sizes match\n  PASS  private-citizen OCR excluded              none present\n================================================================================\n\nFAST (OCR skipped): everything reproduces. Nullius in verba — and now you didn't have to.",
+      "proved_on": "windows-26100.9168",
       "timed_out": false,
-      "status": "pass",
       "exit": 0,
-      "cmd": "python -m pytest tests/ -q && python scripts/trust_but_verify.py --fast",
-      "proved_on": "windows-26100.9168"
+      "status": "pass",
+      "cmd": "python -m pytest tests/ -q && python scripts/trust_but_verify.py --fast"
     },
     "safe": {
       "status": "pass",
       "proved_on": "windows-26100.9168",
       "checks": [
         {
-          "status": "pass",
           "name": "no_secrets",
+          "status": "pass",
           "hits": []
         },
         {
-          "status": "pass",
           "name": "no_estate_paths",
+          "status": "pass",
           "hits": []
         },
         {
-          "status": "pass",
           "name": "no_machine_names",
+          "status": "pass",
           "hits": []
         },
         {
-          "status": "pass",
           "name": "licence_declared",
+          "status": "pass",
           "detail": "LICENSE present"
         },
         {
-          "status": "pass",
           "name": "tree_clean",
+          "status": "pass",
           "dirty_files": 0
         },
         {
-          "status": "pass",
           "name": "verification_documented",
+          "status": "pass",
           "detail": "README carries a verification section and the CI badge"
         }
       ]
@@ -58,11 +58,13 @@
       "runs": [
         {
           "workflow": "verify",
-          "url": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/actions/runs/34173065483",
+          "status": "completed",
+          "url": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/actions/runs/34173815146",
           "conclusion": "success"
         }
       ],
-      "proved_on": "github-actions"
+      "proved_on": "github-actions",
+      "workflow": "verify"
     }
   }
 }
