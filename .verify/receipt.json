@@ -3,35 +3,36 @@
   "repo": "carpe-diem-innovations-inc/election-records-forensics-2026",
   "visibility": "PUBLIC",
   "visibility_assumed": false,
-  "head": "a93e4d178d8d6033b3d407367c96b12acd7ae0dd",
+  "head": "a57a3e2bc2dac683bb58e4fecc51a09fb062d863",
   "content_id": "ffbcad8fdd22d530ed51830a6bdcd9ee4a1e673a3d084c1bd09a123c35524510",
   "branch": "main",
-  "verified_at": "2026-09-08T02:12:14.6663887-04:00",
+  "verified_at": "2026-09-08T16:51:35.3843236-04:00",
   "ran_on": "windows-26100.9168",
   "stages": {
     "works": {
       "evidence": "  PASS  data/metadata/duplicates.json             byte-identical\n  PASS  data/metadata/macos_xattrs.json           byte-identical\n  PASS  data/metadata/dsstore.json                byte-identical\n  PASS  data/metadata/pdf_metadata.json           byte-identical\n  PASS  data/metadata/redaction_leaks.json        byte-identical\n  PASS  data/metadata/revision_recovery.json      byte-identical\n  PASS  data/metadata/consolidated_findings.json  byte-identical\n  PASS  manifest.json published_files (26)        all hashes + sizes match\n  PASS  private-citizen OCR excluded              none present\n================================================================================\n\nFAST (OCR skipped): everything reproduces. Nullius in verba — and now you didn't have to.",
-      "exit": 0,
+      "status": "pass",
       "cmd": "python -m pytest tests/ -q && python scripts/trust_but_verify.py --fast",
-      "timed_out": false,
+      "exit": 0,
       "proved_on": "windows-26100.9168",
-      "status": "pass"
+      "timed_out": false
     },
     "safe": {
+      "proved_on": "windows-26100.9168",
       "checks": [
         {
+          "hits": [],
           "name": "no_secrets",
-          "hits": [],
           "status": "pass"
         },
         {
+          "hits": [],
           "name": "no_estate_paths",
-          "hits": [],
           "status": "pass"
         },
         {
-          "name": "no_machine_names",
           "hits": [],
+          "name": "no_machine_names",
           "status": "pass"
         },
         {
@@ -50,21 +51,18 @@
           "status": "pass"
         }
       ],
-      "proved_on": "windows-26100.9168",
       "status": "pass"
     },
+    "memory": {
+      "proved_on": null,
+      "reason": "a one-shot forensics pipeline: pytest plus a reproduction run, both of which exit. Peak memory matters here and is bounded by the corpus, but there is no resident process, so a growth RATE is not the right instrument.",
+      "status": "n/a"
+    },
     "elsewhere": {
-      "workflow": "verify",
-      "proved_on": "github-actions",
-      "runs": [
-        {
-          "url": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/actions/runs/34181334471",
-          "workflow": "verify",
-          "status": "completed",
-          "conclusion": "success"
-        }
-      ],
-      "status": "pass"
+      "proved_on": null,
+      "sha": "a57a3e2bc2dac683bb58e4fecc51a09fb062d863",
+      "reason": "no CI run recorded for a57a3e2bc2dac683bb58e4fecc51a09fb062d863",
+      "status": "pending"
     }
   }
 }
