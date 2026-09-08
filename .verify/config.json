@@ -2,5 +2,6 @@
   "_comment": "Verification scope for election-records-forensics-2026. This repo already implemented all three stages and is the precedent the estate's verification doctrine was generalised from. 'works' now runs LOCALLY: the unit tests plus trust_but_verify.py --fast, which re-derives every metadata output from the official source archives and compares byte-for-byte. The full run including OCR (~15 min) is the deeper check and is what CI executes on every push; --fast keeps the push gate proportionate. Sources are not committed - corpus/ is gitignored and trust_but_verify fetches from the manifest URLs, checking each against its SHA-256 anchor. See B:/runners/verify.ps1 and canon disclosure_and_verification.md 2.3.",
   "venv": "election-records-forensics-2026",
   "works": "python -m pytest tests/ -q && python scripts/trust_but_verify.py --fast",
-  "_full_run": "python scripts/trust_but_verify.py   # includes OCR, ~15 min - run before a release, and read LIMITATIONS.md on OCR determinism first"
+  "_full_run": "python scripts/trust_but_verify.py   # includes OCR, ~15 min - run before a release, and read LIMITATIONS.md on OCR determinism first",
+  "memory": "n/a - a one-shot forensics pipeline: pytest plus a reproduction run, both of which exit. Peak memory matters here and is bounded by the corpus, but there is no resident process, so a growth RATE is not the right instrument."
 }
