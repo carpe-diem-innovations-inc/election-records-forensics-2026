@@ -69,31 +69,40 @@ record rather than a claim:
 | platform | CPU | what ran | result |
 |---|---|---|---|
 | GitHub Actions, `ubuntu-latest` | runner-assigned | full pipeline incl. OCR, every push | metadata byte-identical; OCR at the ≥ 99.5% similarity threshold |
-| `windows-26100.9168` | Zen 5, 2024 | full pipeline incl. OCR + 12 unit tests | 29/29 — **16 of 16** OCR files byte-identical |
-| `windows-19044.7663` | Ivy Bridge, 2012 | full pipeline incl. OCR + 12 unit tests, from a **fresh clone of this repo** | 29/29 — **14 of 16** byte-identical, 2 on similarity (99.97% and 100.00%) |
+| `windows-26100.9168` | Zen 5, 2024 (desktop) | full pipeline incl. OCR + 12 unit tests | 29/29 — **16 of 16** OCR byte-identical |
+| `windows-19044.7663` | Ivy Bridge, 2012 (desktop, 4C/4T) | full pipeline incl. OCR + 12 unit tests, from a **fresh clone of this repo** | 29/29 — **14 of 16** byte-identical |
+| `windows-19044.7663` | Ivy Bridge, 2012 (mobile, 4C/8T) | full pipeline incl. OCR + 12 unit tests, from a **fresh clone of this repo** | 29/29 — **14 of 16** byte-identical |
 
-**The two rows differ, and the difference is the interesting part.**
+### The OCR divergence is reproducible, not random
 
-The 2024 machine reproduced all 16 OCR files byte-for-byte. The 2012 machine reproduced 14
-byte-for-byte and two only after whitespace normalisation —
-`EMAIL_ICA.CommentsReMinorityView…` at 99.97% and
-`NICM_ChinaStepsToInfluenceElection…` at 100.00% character similarity.
+This is the part worth reading. [LIMITATIONS](LIMITATIONS.md) says ONNX inference is not
+bit-for-bit across CPUs, which on its own sounds like noise you simply tolerate. It is more
+specific than that.
 
-That is **exactly** what [LIMITATIONS](LIMITATIONS.md) predicts: ONNX inference is not
-bit-for-bit across CPUs, and an independent machine was recorded as reproducing 14 of 16
-byte-identically with two whitespace-level differences. An independent run twelve years of
-microarchitecture away landed on the same figure. **So the caveat in LIMITATIONS is not a
-hedge — it is a measured, reproduced property**, and the similarity threshold exists because
-it has to.
+**The two Ivy Bridge machines diverged on the same two files, by the same amounts:**
 
-It also means the 16-of-16 row is the **weaker** of the two as evidence: getting a perfect
-byte match is consistent with that being the machine the published data was produced on, so it
-demonstrates the pipeline has not drifted rather than that it is machine-independent.
+| file | similarity |
+|---|---|
+| `EMAIL_ICA.CommentsReMinorityView_30DEC2020_DECLASS_REDACTED.pdf.ocr.txt` | 99.97% |
+| `NICM_ChinaStepsToInfluenceElection_16OCT2020_DECLASS_REDACTED.pdf.ocr.txt` | 100.00% |
 
-‼ **One limit on both Windows rows, stated because a reader would otherwise assume more than
-is there: both are LTSC installations** — the same stripped-down Windows servicing lineage,
-neither a stock consumer image. Two Windows results here are less independent than "two
-Windows machines" sounds. They differ in OS generation and CPU, not in OS lineage.
+Two different CPUs of that generation — a desktop 4C/4T and a mobile 4C/8T, different dies —
+produced *identical* output to each other, and both differ from the 2024 machine in exactly
+those two files and no others. The 100.00% entry is whitespace-normalised equality: the
+characters match and the spacing does not.
+
+So the divergence **tracks the CPU family rather than varying per run.** It is bounded,
+predictable, and confined to two of sixteen files. That is a stronger and more useful claim
+than "OCR is nondeterministic", and it is why the threshold is 99.5% rather than a shrug.
+
+It also settles which row is the weakest evidence: the 16-of-16 result is consistent with that
+being the machine the published data was produced on, so it shows the pipeline has not drifted
+rather than that it is machine-independent.
+
+‼ **A limit on all three Windows rows, stated because a reader would otherwise assume more
+than is there: every one is an LTSC installation**, and the two Ivy Bridge rows are the *same
+OS build*. They differ in CPU and in nothing else. Three Windows results are less independent
+than "three Windows machines" sounds.
 
 **The genuinely uncontrolled platform is the CI row**, on hardware and an operating system this
 project does not own. And none of these rows replaces the thing worth most: someone with no
