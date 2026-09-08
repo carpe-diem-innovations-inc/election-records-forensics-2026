@@ -72,7 +72,6 @@ record rather than a claim:
 | `windows-26100.9168` | Zen 5, 2024 (desktop) | full pipeline incl. OCR + 12 unit tests | 29/29 — **16 of 16** OCR byte-identical |
 | `windows-19044.7663` | Ivy Bridge, 2012 (desktop, 4C/4T) | full pipeline incl. OCR + 12 unit tests, from a **fresh clone of this repo** | 29/29 — **14 of 16** byte-identical |
 | `windows-19044.7663` | Ivy Bridge, 2012 (mobile, 4C/8T) | full pipeline incl. OCR + 12 unit tests, from a **fresh clone of this repo** | 29/29 — **14 of 16** byte-identical |
-
 | Ubuntu 24.04 (WSL2, kernel 6.18) | Zen 5, 2024 — **same CPU as the row above** | full pipeline incl. OCR + 12 unit tests, from a **fresh clone**, identical Python 3.14.7 | 29/29 — **16 of 16** OCR byte-identical |
 
 ### It is the CPU, not the operating system
