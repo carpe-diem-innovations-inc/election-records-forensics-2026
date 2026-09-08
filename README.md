@@ -73,6 +73,30 @@ record rather than a claim:
 | `windows-19044.7663` | Ivy Bridge, 2012 (desktop, 4C/4T) | full pipeline incl. OCR + 12 unit tests, from a **fresh clone of this repo** | 29/29 — **14 of 16** byte-identical |
 | `windows-19044.7663` | Ivy Bridge, 2012 (mobile, 4C/8T) | full pipeline incl. OCR + 12 unit tests, from a **fresh clone of this repo** | 29/29 — **14 of 16** byte-identical |
 
+| Ubuntu 24.04 (WSL2, kernel 6.18) | Zen 5, 2024 — **same CPU as the row above** | full pipeline incl. OCR + 12 unit tests, from a **fresh clone**, identical Python 3.14.7 | 29/29 — **16 of 16** OCR byte-identical |
+
+### It is the CPU, not the operating system
+
+The rows above are a controlled comparison, and they answer the question the similarity
+threshold leaves open.
+
+| CPU | OS | OCR result |
+|---|---|---|
+| Zen 5 | Windows LTSC | 16 / 16 byte-identical |
+| **Zen 5** | **Ubuntu 24.04, Linux kernel** | **16 / 16 byte-identical** |
+| Ivy Bridge (desktop, 4C/4T) | Windows LTSC | 14 / 16 |
+| Ivy Bridge (mobile, 4C/8T) | Windows LTSC | 14 / 16 |
+
+**Hold the CPU and change the operating system across a Windows-to-Linux boundary: the output
+is identical. Hold the operating system and change the CPU: the same two files diverge, by the
+same amounts.** Python was pinned to 3.14.7 on every one of those four runs, and every
+dependency to the versions in `requirements.txt`.
+
+So the caveat in [LIMITATIONS](LIMITATIONS.md) is precise rather than cautious. ONNX inference
+varies by **CPU**, and on this pipeline the effect is bounded to two of sixteen OCR files,
+reproducible across different CPUs of the same generation, and unaffected by the operating
+system.
+
 ### The OCR divergence is reproducible, not random
 
 This is the part worth reading. [LIMITATIONS](LIMITATIONS.md) says ONNX inference is not
