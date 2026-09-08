@@ -3,61 +3,66 @@
   "repo": "carpe-diem-innovations-inc/election-records-forensics-2026",
   "visibility": "PUBLIC",
   "visibility_assumed": false,
-  "head": "b2563ec4a321c806a49a14318cf5693082e8eb21",
+  "head": "6322920478c4bc73369b1f7d21f86bf99a2508b4",
   "content_id": "233010e71b6ef054df10a04f812676c562f7682f29e5c57b1a0d7aa1fd9a71c4",
   "branch": "verify/cpu-not-os",
-  "verified_at": "2026-09-07T20:21:31.5091191-04:00",
+  "verified_at": "2026-09-07T20:26:53.9173347-04:00",
   "ran_on": "windows-26100.9168",
   "stages": {
     "works": {
-      "cmd": "python -m pytest tests/ -q && python scripts/trust_but_verify.py --fast",
+      "evidence": "  PASS  data/metadata/duplicates.json             byte-identical\n  PASS  data/metadata/macos_xattrs.json           byte-identical\n  PASS  data/metadata/dsstore.json                byte-identical\n  PASS  data/metadata/pdf_metadata.json           byte-identical\n  PASS  data/metadata/redaction_leaks.json        byte-identical\n  PASS  data/metadata/revision_recovery.json      byte-identical\n  PASS  data/metadata/consolidated_findings.json  byte-identical\n  PASS  manifest.json published_files (26)        all hashes + sizes match\n  PASS  private-citizen OCR excluded              none present\n================================================================================\n\nFAST (OCR skipped): everything reproduces. Nullius in verba — and now you didn't have to.",
       "timed_out": false,
-      "proved_on": "windows-26100.9168",
       "status": "pass",
       "exit": 0,
-      "evidence": "  PASS  data/metadata/duplicates.json             byte-identical\n  PASS  data/metadata/macos_xattrs.json           byte-identical\n  PASS  data/metadata/dsstore.json                byte-identical\n  PASS  data/metadata/pdf_metadata.json           byte-identical\n  PASS  data/metadata/redaction_leaks.json        byte-identical\n  PASS  data/metadata/revision_recovery.json      byte-identical\n  PASS  data/metadata/consolidated_findings.json  byte-identical\n  PASS  manifest.json published_files (26)        all hashes + sizes match\n  PASS  private-citizen OCR excluded              none present\n================================================================================\n\nFAST (OCR skipped): everything reproduces. Nullius in verba — and now you didn't have to."
+      "cmd": "python -m pytest tests/ -q && python scripts/trust_but_verify.py --fast",
+      "proved_on": "windows-26100.9168"
     },
     "safe": {
+      "status": "pass",
+      "proved_on": "windows-26100.9168",
       "checks": [
         {
-          "hits": [],
-          "name": "no_secrets",
-          "status": "pass"
-        },
-        {
-          "hits": [],
-          "name": "no_estate_paths",
-          "status": "pass"
-        },
-        {
-          "hits": [],
-          "name": "no_machine_names",
-          "status": "pass"
-        },
-        {
-          "name": "licence_declared",
           "status": "pass",
+          "name": "no_secrets",
+          "hits": []
+        },
+        {
+          "status": "pass",
+          "name": "no_estate_paths",
+          "hits": []
+        },
+        {
+          "status": "pass",
+          "name": "no_machine_names",
+          "hits": []
+        },
+        {
+          "status": "pass",
+          "name": "licence_declared",
           "detail": "LICENSE present"
         },
         {
-          "name": "tree_clean",
           "status": "pass",
+          "name": "tree_clean",
           "dirty_files": 0
         },
         {
-          "name": "verification_documented",
           "status": "pass",
+          "name": "verification_documented",
           "detail": "README carries a verification section and the CI badge"
         }
-      ],
-      "status": "pass",
-      "proved_on": "windows-26100.9168"
+      ]
     },
     "elsewhere": {
-      "reason": "no CI run recorded for b2563ec4a321c806a49a14318cf5693082e8eb21",
-      "sha": "b2563ec4a321c806a49a14318cf5693082e8eb21",
-      "status": "pending",
-      "proved_on": null
+      "status": "pass",
+      "runs": [
+        {
+          "workflow": "verify",
+          "url": "https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026/actions/runs/34173065483",
+          "conclusion": "success"
+        }
+      ],
+      "proved_on": "github-actions"
     }
   }
 }
