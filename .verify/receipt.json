@@ -4,10 +4,10 @@
   "visibility": "PUBLIC",
   "visibility_assumed": false,
   "visibility_source": "gh",
-  "head": "1ef5f6c57b5bde918b2406ac58dcdb9b6ddb62f8",
-  "content_id": "6001a87cfa59a7a101d71c0ff4e576ec84f1f911d9e7e8ef21447e753f3d0f55",
+  "head": "cc2e89e8390be4381072df660e79c667ced22795",
+  "content_id": "77e1b28c652b5911c1e5e180690b683ee0965004655daf7f474981b342b4861c",
   "branch": "p5/reproduce-key",
-  "verified_at": "2026-10-20T14:55:34.8656580-04:00",
+  "verified_at": "2026-10-20T15:34:15.3431690-04:00",
   "ran_on": "windows-26100.9711",
   "stages": {
     "works": {
@@ -35,7 +35,7 @@
             "state": "loaded"
           },
           "hit_count": 0,
-          "commits_read": 23,
+          "commits_read": 25,
           "tags_read": 1,
           "range": "HEAD --branches --tags --not --remotes=origin",
           "origin_refs": 2,
@@ -79,8 +79,8 @@
     "elsewhere": {
       "status": "pending",
       "proved_on": null,
-      "reason": "no CI run recorded for 1ef5f6c57b5bde918b2406ac58dcdb9b6ddb62f8",
-      "sha": "1ef5f6c57b5bde918b2406ac58dcdb9b6ddb62f8"
+      "reason": "no CI run recorded for cc2e89e8390be4381072df660e79c667ced22795",
+      "sha": "cc2e89e8390be4381072df660e79c667ced22795"
     }
   }
 }
