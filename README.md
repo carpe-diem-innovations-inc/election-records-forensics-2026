@@ -61,6 +61,8 @@ a PASS/FAIL table. `--fast` skips OCR (~2 min instead of ~15). A weekly CI run d
 public, so this repo also acts as a **canary**: if the official source files are ever modified or removed,
 the badge above goes red.
 
+The same command is declared as data in `.verify/config.json` (`reproduce`: the command, its `--fast` variant, the pinned requirements, the manifest and the hardware class), which our fresh-clone runner `repro_check` reads to re-run it from a fresh clone in a fresh virtual environment and re-check every manifest hash.
+
 ### Where it has been reproduced
 
 Reproduction is only worth as much as the number of places it has happened, so here is the

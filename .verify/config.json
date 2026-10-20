@@ -3,5 +3,13 @@
   "venv": "election-records-forensics-2026",
   "works": "python -m pytest tests/ -q && python scripts/trust_but_verify.py --fast",
   "_full_run": "python scripts/trust_but_verify.py   # includes OCR, ~15 min - run before a release, and read LIMITATIONS.md on OCR determinism first",
-  "memory": "n/a - a one-shot forensics pipeline: pytest plus a reproduction run, both of which exit. Peak memory matters here and is bounded by the corpus, but there is no resident process, so a growth RATE is not the right instrument."
+  "memory": "n/a - a one-shot forensics pipeline: pytest plus a reproduction run, both of which exit. Peak memory matters here and is bounded by the corpus, but there is no resident process, so a growth RATE is not the right instrument.",
+  "reproduce": {
+    "command": "python scripts/trust_but_verify.py",
+    "fast": "python scripts/trust_but_verify.py --fast",
+    "requirements": "requirements.txt",
+    "manifest": "manifest.json",
+    "hardware_class": {"os": ["windows", "linux"], "arch": ["x86_64", "AMD64"], "python": ">=3.11", "gpu": false},
+    "timeout_sec": 3600
+  }
 }

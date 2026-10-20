@@ -3,6 +3,10 @@
 All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/); versioning is date-based.
 
+## [Unreleased]
+### Added
+- `.verify/config.json` declares a `reproduce` block (command, `--fast` variant, requirements, manifest, hardware class) so a fresh-clone runner can re-run `trust_but_verify.py` and re-check every manifest hash.
+
 ## [1.0.0] — 2026-07-19
 ### Added
 - Initial public release: reproducible verification kit for the `whitehouse.gov/election-integrity`
