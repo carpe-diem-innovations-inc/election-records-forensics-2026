@@ -61,6 +61,8 @@ a PASS/FAIL table. `--fast` skips OCR (~2 min instead of ~15). A weekly CI run d
 public, so this repo also acts as a **canary**: if the official source files are ever modified or removed,
 the badge above goes red.
 
+The same command is declared as data in `.verify/config.json` (`reproduce`: the command, its `--fast` variant, the pinned requirements, the manifest and the hardware class) so that any runner, ours or yours, can re-run it from a fresh clone in a fresh virtual environment and re-check the published files' manifest hashes in that clone, without parsing this README.
+
 ### Where it has been reproduced
 
 Reproduction is only worth as much as the number of places it has happened, so here is the
@@ -73,6 +75,8 @@ record rather than a claim:
 | `windows-19044.7663` | Ivy Bridge, 2012 (desktop, 4C/4T) | full pipeline incl. OCR + 12 unit tests, from a **fresh clone of this repo** | 29/29 — **14 of 16** byte-identical |
 | `windows-19044.7663` | Ivy Bridge, 2012 (mobile, 4C/8T) | full pipeline incl. OCR + 12 unit tests, from a **fresh clone of this repo** | 29/29 — **14 of 16** byte-identical |
 | Ubuntu 24.04 (WSL2, kernel 6.18) | Zen 5, 2024 — **same CPU as the row above** | full pipeline incl. OCR + 12 unit tests, from a **fresh clone**, identical Python 3.14.7 | 29/29 — **16 of 16** OCR byte-identical |
+| windows 10.0.26100.9711 | AMD Ryzen 9 9900X 12-Core Processor | fast from a fresh clone + fresh venv, head 647b100 | PASS · manifest 26/26 · receipt 3e491cde-5900-4d76-930e-fa1231875fda |
+| windows 10.0.19044.7807 | Intel(R) Core(TM) i5-3570K CPU @ 3.40GHz | fast from a fresh clone + fresh venv, head 647b100 | PASS · manifest 26/26 · receipt d66084a2-0b33-4eac-86de-0adbd937cf5c |
 
 ### It is the CPU, not the operating system
 
