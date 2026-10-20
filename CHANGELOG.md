@@ -5,7 +5,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/); versioning is da
 
 ## [Unreleased]
 ### Added
-- `.verify/config.json` declares a `reproduce` block (command, `--fast` variant, requirements, manifest, hardware class) so a fresh-clone runner can re-run `trust_but_verify.py` and re-check every manifest hash.
+- `.verify/config.json` declares a `reproduce` block (command, `--fast` variant, requirements, manifest, hardware class) so any fresh-clone runner can re-run `trust_but_verify.py` and re-check the published files' manifest hashes in the clone.
 
 ## [1.0.0] — 2026-07-19
 ### Added
